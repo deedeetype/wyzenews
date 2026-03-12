@@ -9,6 +9,15 @@ const errorEl = document.getElementById('error');
 const errorTextEl = document.getElementById('error-text');
 const confirmBtn = document.getElementById('confirm-btn');
 
+// Check if all required elements exist
+if (!confirmationEl || !loadingEl || !successEl || !errorEl || !errorTextEl) {
+    console.error('Required elements not found in page');
+    if (errorEl && errorTextEl) {
+        showError('Page configuration error. Please contact support.');
+    }
+    return;
+}
+
 async function unsubscribe() {
     if (!token) {
         showError('Invalid unsubscribe link. No token provided.');
@@ -33,6 +42,7 @@ async function unsubscribe() {
             showError(data.error || 'Failed to unsubscribe.');
         }
     } catch (error) {
+        console.error('Unsubscribe error:', error);
         showError('Network error. Please try again.');
     }
 }
@@ -44,15 +54,19 @@ function showSuccess() {
 
 function showError(message) {
     loadingEl.style.display = 'none';
-    confirmationEl.style.display = 'none';
+    if (confirmationEl) confirmationEl.style.display = 'none';
     errorTextEl.textContent = message;
     errorEl.style.display = 'block';
 }
 
+// Initialize page
 if (token) {
     confirmationEl.style.display = 'block';
 } else {
     showError('Invalid unsubscribe link.');
 }
 
-confirmBtn.addEventListener('click', unsubscribe);
+// Handle confirm button click
+if (confirmBtn) {
+    confirmBtn.addEventListener('click', unsubscribe);
+}
