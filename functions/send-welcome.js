@@ -49,7 +49,9 @@ exports.handler = async (event, context) => {
 
     // Create transporter
     const transporter = nodemailer.createTransport({
-      service: 'gmail',
+      host: 'smtp.gmail.com',
+      port: 587,
+      secure: false,
       auth: {
         user: GMAIL_USER,
         pass: GMAIL_APP_PASSWORD
@@ -197,7 +199,7 @@ WyzeNews by Labwyze Inc.
 
     // Send email
     const mailOptions = {
-      from: `"WyzeNews" <${GMAIL_USER}>`,
+      from: '"WyzeNews" <noreply@wyzenews.com>',
       to: email,
       subject: '🌍 Welcome to WyzeNews - Your Daily News Digest',
       text: textContent,
