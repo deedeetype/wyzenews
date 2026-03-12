@@ -1,0 +1,15 @@
+[build]
+  publish = "."
+  functions = "functions"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Environment variables (set these in Netlify dashboard):
+# SUPABASE_URL = your_supabase_project_url
+# SUPABASE_ANON_KEY = your_supabase_anon_key

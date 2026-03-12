@@ -1,0 +1,16 @@
+{
+  "name": "daily-digest-landing",
+  "version": "1.0.0",
+  "description": "Daily Digest subscription landing page",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python3 -m http.server 8000",
+    "deploy": "echo 'Deploy via Netlify CLI or Git push'"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.0"
+  },
+  "devDependencies": {},
+  "author": "Labwyze Inc.",
+  "license": "MIT"
+}
