@@ -1,142 +1,143 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Get daily breaking news with AI-generated comic strip visuals. Subscribe to Daily Digest for free.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Get daily breaking news with AI-generated comic strip visuals. Subscribe to Daily Digest for free."
+    />
     <title>Daily Digest - Breaking News in Comic Style</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!-- Hero Section -->
     <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    🌍 Breaking News,<br>
-                    <span class="gradient-text">Comic Strip Style</span>
-                </h1>
-                <p class="hero-subtitle">
-                    Get 3 curated breaking news stories every day with stunning AI-generated comic visuals. Free, straight to your inbox.
-                </p>
-                
-                <!-- Subscribe Form -->
-                <form id="subscribe-form" class="subscribe-form">
-                    <div class="form-group">
-                        <input 
-                            type="email" 
-                            id="email" 
-                            name="email" 
-                            placeholder="Enter your email address"
-                            required
-                            class="email-input"
-                        >
-                        <button type="submit" class="submit-btn" id="submit-btn">
-                            <span class="btn-text">Subscribe Free</span>
-                            <span class="btn-loading" style="display: none;">
-                                <span class="spinner"></span> Subscribing...
-                            </span>
-                        </button>
-                    </div>
-                    <p class="form-hint">No spam. Unsubscribe anytime. Curated daily breaking news.</p>
-                </form>
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            🌍 Breaking News,<br />
+            <span class="gradient-text">Comic Strip Style</span>
+          </h1>
+          <p class="hero-subtitle">
+            Get 3 curated breaking news stories every day with stunning
+            AI-generated comic visuals. Free, straight to your inbox.
+          </p>
 
-                <!-- Success Message -->
-                <div id="success-message" class="success-message" style="display: none;">
-                    <div class="success-icon">✅</div>
-                    <h3>Welcome to Daily Digest!</h3>
-                    <p>Check your inbox for a confirmation email.</p>
-                </div>
-
-                <!-- Error Message -->
-                <div id="error-message" class="error-message" style="display: none;">
-                    <div class="error-icon">❌</div>
-                    <p id="error-text">Something went wrong. Please try again.</p>
-                </div>
+          <!-- Subscribe Form -->
+          <form id="subscribe-form" class="subscribe-form">
+            <div class="form-group">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email address"
+                required
+                class="email-input"
+              />
+              <button type="submit" class="submit-btn" id="submit-btn">
+                <span class="btn-text">Subscribe Free</span>
+                <span class="btn-loading" style="display: none">
+                  <span class="spinner"></span> Subscribing...
+                </span>
+              </button>
             </div>
+            <p class="form-hint">
+              No spam. Unsubscribe anytime. Curated daily breaking news 100%
+              FREE!
+            </p>
+          </form>
+
+          <!-- Success Message -->
+          <div
+            id="success-message"
+            class="success-message"
+            style="display: none"
+          >
+            <div class="success-icon">✅</div>
+            <h3>Welcome to Daily Digest!</h3>
+            <p>Check your inbox for a confirmation email.</p>
+          </div>
+
+          <!-- Error Message -->
+          <div id="error-message" class="error-message" style="display: none">
+            <div class="error-icon">❌</div>
+            <p id="error-text">Something went wrong. Please try again.</p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Today's Breaking News -->
     <section id="today-section" class="today">
-        <div class="container">
-            <h2 class="section-title">📰 Today's Breaking News</h2>
-            <div id="today-digest" class="digest-grid">
-                <!-- Loaded dynamically from breaking/index.json -->
-                <p style="text-align: center; color: #8b8ba7;">Loading today's stories...</p>
-            </div>
+      <div class="container">
+        <h2 class="section-title">📰 Today's Breaking News</h2>
+        <div id="today-digest" class="digest-grid">
+          <!-- Loaded dynamically from breaking/index.json -->
+          <p style="text-align: center; color: #8b8ba7">
+            Loading today's stories...
+          </p>
         </div>
+      </div>
     </section>
 
     <!-- Archive Section -->
     <section class="archive">
-        <div class="container">
-            <h2 class="section-title">📅 Archive</h2>
-            <div class="archive-picker">
-                <label for="date-picker">Select a date:</label>
-                <input type="date" id="date-picker" max="" value="">
-                <button id="load-archive" class="archive-btn">View Digest</button>
-            </div>
-            <div id="archive-digest" class="digest-grid" style="display: none;">
-                <!-- Archive stories loaded here -->
-            </div>
+      <div class="container">
+        <h2 class="section-title">📅 Archive</h2>
+        <div class="archive-picker">
+          <label for="date-picker">Select a date:</label>
+          <input type="date" id="date-picker" max="" value="" />
+          <button id="load-archive" class="archive-btn">View Digest</button>
         </div>
+        <div id="archive-digest" class="digest-grid" style="display: none">
+          <!-- Archive stories loaded here -->
+        </div>
+      </div>
     </section>
 
     <!-- Preview Section -->
     <section class="preview">
-        <div class="container">
-            <h2 class="section-title">What You'll Get Daily</h2>
-            
-            <div class="preview-card">
-                <div class="preview-badge">BREAKING #1</div>
-                <img 
-                    src="https://via.placeholder.com/800x450/667eea/ffffff?text=Comic+Strip+Visual" 
-                    alt="Example breaking news visualization"
-                    class="preview-image"
-                    id="preview-image"
-                >
-                <h3 class="preview-headline">Example: Global Event Headline</h3>
-                <p class="preview-summary">
-                    Each story comes with a concise, factual summary and a unique AI-generated comic strip illustration that captures the essence of the news in a fun, visual way.
-                </p>
-            </div>
+      <div class="container">
+        <h2 class="section-title">What You'll Get Daily</h2>
 
-            <div class="features-grid">
-                <div class="feature">
-                    <div class="feature-icon">📰</div>
-                    <h4>Curated News</h4>
-                    <p>3 most significant global stories, fact-checked and summarized</p>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon">🎨</div>
-                    <h4>Comic Visuals</h4>
-                    <p>AI-generated comic strip images for each story</p>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon">⚡</div>
-                    <h4>Fast & Clean</h4>
-                    <p>No clutter, no ads, just news - delivered daily</p>
-                </div>
-            </div>
+        <div class="features-grid">
+          <div class="feature">
+            <div class="feature-icon">📰</div>
+            <h4>Curated News, 100% FREE!</h4>
+            <p>
+              3 most significant global stories, fact-checked and summarized
+            </p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">🎨</div>
+            <h4>Comic Visuals</h4>
+            <p>AI-generated comic strip images for each story</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">⚡</div>
+            <h4>Fast & Clean</h4>
+            <p>No clutter, no ads, just news - delivered daily</p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>
-                <strong>Daily Digest</strong> by <a href="https://labwyze.com" target="_blank">Labwyze Inc.</a><br>
-                Powered by Perplexity AI & Google Gemini
-            </p>
-            <p class="footer-links">
-                <a href="mailto:david.laborieux@gmail.com">Contact</a> | 
-                <a href="#privacy">Privacy Policy</a>
-            </p>
-        </div>
+      <div class="container">
+        <p>
+          <strong>WyzeNews</strong> by
+          <a href="https://labwyze.com" target="_blank">Labwyze Inc.</a><br />
+        </p>
+        <p class="footer-links">
+          <a href="mailto:david.laborieux@gmail.com">Contact</a> |
+          <a href="#privacy">Privacy Policy</a>
+        </p>
+      </div>
     </footer>
 
     <script src="app.js"></script>
     <script src="digest.js"></script>
-</body>
+  </body>
 </html>
