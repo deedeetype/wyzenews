@@ -4,8 +4,9 @@
 const { createClient } = require('@supabase/supabase-js');
 
 // Supabase config (will be set via Netlify environment variables)
-const SUPABASE_URL = process.env.SUPABASE_URL;
-const SUPABASE_ANON_KEY = process.env.SUPABASE_ANON_KEY;
+// Support both naming conventions (Netlify integration vs manual setup)
+const SUPABASE_URL = process.env.SUPABASE_URL || process.env.SUPABASE_DATABASE_URL;
+const SUPABASE_ANON_KEY = process.env.SUPABASE_ANON_KEY || process.env.SUPABASE_SERVICE_ROLE_KEY;
 
 exports.handler = async (event, context) => {
   // Only allow POST requests
