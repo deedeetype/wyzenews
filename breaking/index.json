@@ -1,0 +1,25 @@
+{
+  "2026-03-12": {
+    "date": "March 12, 2026",
+    "stories": [
+      {
+        "headline": "US-Iran Military Conflict Escalates",
+        "summary": "The military conflict between the U.S. and Iran has intensified on its 12th day, marked by Iran's attacks on three commercial vessels in the Strait of...",
+        "image": "breaking/2026-03-12/breaking_1.png",
+        "url": "breaking/2026-03-12/1.html"
+      },
+      {
+        "headline": "Global Energy Crisis and Oil Price Volatility",
+        "summary": "The International Energy Agency is deploying record oil reserves to address a global energy crisis stemming from a Middle East conflict. This situatio...",
+        "image": "breaking/2026-03-12/breaking_2.png",
+        "url": "breaking/2026-03-12/2.html"
+      },
+      {
+        "headline": "Geopolitical Instability and Diplomatic Tensions",
+        "summary": "The UN Security Council has passed a resolution demanding Iran cease attacks on Gulf states, while the US ordered embassy staff to leave Saudi Arabia ...",
+        "image": "breaking/2026-03-12/breaking_3.png",
+        "url": "breaking/2026-03-12/3.html"
+      }
+    ]
+  }
+}

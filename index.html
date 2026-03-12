@@ -57,6 +57,32 @@
         </div>
     </section>
 
+    <!-- Today's Breaking News -->
+    <section id="today-section" class="today">
+        <div class="container">
+            <h2 class="section-title">📰 Today's Breaking News</h2>
+            <div id="today-digest" class="digest-grid">
+                <!-- Loaded dynamically from breaking/index.json -->
+                <p style="text-align: center; color: #8b8ba7;">Loading today's stories...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Archive Section -->
+    <section class="archive">
+        <div class="container">
+            <h2 class="section-title">📅 Archive</h2>
+            <div class="archive-picker">
+                <label for="date-picker">Select a date:</label>
+                <input type="date" id="date-picker" max="" value="">
+                <button id="load-archive" class="archive-btn">View Digest</button>
+            </div>
+            <div id="archive-digest" class="digest-grid" style="display: none;">
+                <!-- Archive stories loaded here -->
+            </div>
+        </div>
+    </section>
+
     <!-- Preview Section -->
     <section class="preview">
         <div class="container">
@@ -111,5 +137,6 @@
     </footer>
 
     <script src="app.js"></script>
+    <script src="digest.js"></script>
 </body>
 </html>
