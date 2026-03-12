@@ -98,6 +98,25 @@ exports.handler = async (event, context) => {
       throw new Error('Failed to save subscription');
     }
 
+    // Send welcome email asynchronously (don't block response)
+    const newSubscriber = data[0];
+    if (newSubscriber && newSubscriber.unsubscribe_token) {
+      // Call welcome email function
+      try {
+        await fetch(`${process.env.URL}/.netlify/functions/send-welcome`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            email: newSubscriber.email,
+            unsubscribeToken: newSubscriber.unsubscribe_token
+          })
+        });
+      } catch (emailError) {
+        // Log but don't fail subscription
+        console.error('Welcome email failed (non-critical):', emailError);
+      }
+    }
+
     // Success
     return {
       statusCode: 200,
