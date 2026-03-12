@@ -8,8 +8,12 @@ const SUPABASE_URL = process.env.SUPABASE_URL || process.env.SUPABASE_DATABASE_U
 const SUPABASE_ANON_KEY = process.env.SUPABASE_ANON_KEY || process.env.SUPABASE_SERVICE_ROLE_KEY;
 
 exports.handler = async (event, context) => {
+  console.log('[Unsubscribe] Function invoked');
+  console.log('[Unsubscribe] Method:', event.httpMethod);
+  
   // Only allow POST requests
   if (event.httpMethod !== 'POST') {
+    console.log('[Unsubscribe] Method not allowed:', event.httpMethod);
     return {
       statusCode: 405,
       body: JSON.stringify({ error: 'Method not allowed' })
@@ -24,12 +28,14 @@ exports.handler = async (event, context) => {
 
   // Handle preflight
   if (event.httpMethod === 'OPTIONS') {
+    console.log('[Unsubscribe] Handling preflight request');
     return { statusCode: 200, headers, body: '' };
   }
 
   try {
     // Parse request body
     const { token } = JSON.parse(event.body);
+    console.log('[Unsubscribe] Token received:', token?.substring(0, 8) + '...');
 
     // Validate token
     if (!token) {

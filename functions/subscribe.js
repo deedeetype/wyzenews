@@ -9,8 +9,12 @@ const SUPABASE_URL = process.env.SUPABASE_URL || process.env.SUPABASE_DATABASE_U
 const SUPABASE_ANON_KEY = process.env.SUPABASE_ANON_KEY || process.env.SUPABASE_SERVICE_ROLE_KEY;
 
 exports.handler = async (event, context) => {
+  console.log('[Subscribe] Function invoked');
+  console.log('[Subscribe] Method:', event.httpMethod);
+  
   // Only allow POST requests
   if (event.httpMethod !== 'POST') {
+    console.log('[Subscribe] Method not allowed:', event.httpMethod);
     return {
       statusCode: 405,
       body: JSON.stringify({ error: 'Method not allowed' })
@@ -26,15 +30,18 @@ exports.handler = async (event, context) => {
 
   // Handle preflight
   if (event.httpMethod === 'OPTIONS') {
+    console.log('[Subscribe] Handling preflight request');
     return { statusCode: 200, headers, body: '' };
   }
 
   try {
     // Parse request body
     const { email } = JSON.parse(event.body);
+    console.log('[Subscribe] Email received:', email);
 
     // Validate email
     if (!email || !isValidEmail(email)) {
+      console.log('[Subscribe] Invalid email:', email);
       return {
         statusCode: 400,
         headers,
@@ -44,7 +51,7 @@ exports.handler = async (event, context) => {
 
     // Initialize Supabase client
     if (!SUPABASE_URL || !SUPABASE_ANON_KEY) {
-      console.error('Supabase credentials not configured');
+      console.error('[Subscribe] ERROR: Supabase credentials not configured');
       return {
         statusCode: 500,
         headers,
@@ -52,9 +59,11 @@ exports.handler = async (event, context) => {
       };
     }
 
+    console.log('[Subscribe] Connecting to Supabase:', SUPABASE_URL);
     const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
     // Check if email already exists
+    console.log('[Subscribe] Checking for existing subscription...');
     const { data: existing, error: checkError } = await supabase
       .from('digest_subscribers')
       .select('id, email')
@@ -63,12 +72,13 @@ exports.handler = async (event, context) => {
 
     if (checkError && checkError.code !== 'PGRST116') {
       // PGRST116 = not found (which is OK)
-      console.error('Database check error:', checkError);
+      console.error('[Subscribe] ERROR: Database check failed:', checkError);
       throw new Error('Database error');
     }
 
     if (existing) {
       // Email already subscribed
+      console.log('[Subscribe] Email already subscribed:', email);
       return {
         statusCode: 200,
         headers,
@@ -81,6 +91,7 @@ exports.handler = async (event, context) => {
     }
 
     // Insert new subscriber
+    console.log('[Subscribe] Inserting new subscriber:', email);
     const { data, error } = await supabase
       .from('digest_subscribers')
       .insert([
@@ -94,14 +105,17 @@ exports.handler = async (event, context) => {
       .select();
 
     if (error) {
-      console.error('Insert error:', error);
+      console.error('[Subscribe] ERROR: Insert failed:', error);
       throw new Error('Failed to save subscription');
     }
+    
+    console.log('[Subscribe] Successfully inserted subscriber:', data[0]?.email);
 
     // Send welcome email asynchronously (don't block response)
     const newSubscriber = data[0];
     if (newSubscriber && newSubscriber.unsubscribe_token) {
       // Call welcome email function
+      console.log('[Subscribe] Triggering welcome email for:', newSubscriber.email);
       try {
         await fetch(`${process.env.URL}/.netlify/functions/send-welcome`, {
           method: 'POST',
@@ -111,9 +125,10 @@ exports.handler = async (event, context) => {
             unsubscribeToken: newSubscriber.unsubscribe_token
           })
         });
+        console.log('[Subscribe] Welcome email triggered successfully');
       } catch (emailError) {
         // Log but don't fail subscription
-        console.error('Welcome email failed (non-critical):', emailError);
+        console.error('[Subscribe] WARNING: Welcome email failed (non-critical):', emailError);
       }
     }
 

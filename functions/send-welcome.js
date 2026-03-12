@@ -8,8 +8,11 @@ const GMAIL_USER = process.env.GMAIL_USER;
 const GMAIL_APP_PASSWORD = process.env.GMAIL_APP_PASSWORD;
 
 exports.handler = async (event, context) => {
+  console.log('[SendWelcome] Function invoked');
+  
   // Only allow POST requests
   if (event.httpMethod !== 'POST') {
+    console.log('[SendWelcome] Method not allowed:', event.httpMethod);
     return {
       statusCode: 405,
       body: JSON.stringify({ error: 'Method not allowed' })
@@ -24,6 +27,7 @@ exports.handler = async (event, context) => {
 
   try {
     const { email, unsubscribeToken } = JSON.parse(event.body);
+    console.log('[SendWelcome] Sending to:', email);
 
     if (!email || !unsubscribeToken) {
       return {
@@ -146,7 +150,7 @@ exports.handler = async (event, context) => {
                 • 3 curated breaking news stories daily<br>
                 • Concise, factual summaries<br>
                 • Unique comic strip illustrations<br>
-                • Delivered at 8:00 AM EST
+                • Delivered daily to your inbox
             </div>
             
             <p>Your first digest will arrive tomorrow morning. We scan the world's most significant events and present them in an engaging, visual format.</p>
@@ -180,7 +184,7 @@ What you'll get:
 • 3 curated breaking news stories daily
 • Concise, factual summaries
 • Unique comic strip illustrations
-• Delivered at 8:00 AM EST
+• Delivered daily to your inbox
 
 Your first digest will arrive tomorrow morning.
 
