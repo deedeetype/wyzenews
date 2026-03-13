@@ -27,7 +27,7 @@
     <meta name="twitter:image:alt" content="Iran-US War Intensifies: Strait of Hormuz Remains Closed as Oil Prices Soar">
     
     <!-- Additional Meta -->
-    <meta property="article:published_time" content="2026-03-13T09:23:46.091414">
+    <meta property="article:published_time" content="2026-03-13T09:38:25.429979">
     <meta property="article:author" content="WyzeNews">
     
     <style>
@@ -274,6 +274,12 @@
             object-fit: contain;
             border-radius: 8px;
             box-shadow: 0 8px 40px rgba(0, 0, 0, 0.8);
+            transition: transform 0.3s ease;
+            cursor: grab;
+        }
+        
+        #lightbox img:active {
+            cursor: grabbing;
         }
         
         @media (max-width: 768px) {
@@ -387,6 +393,14 @@ What comes next depends on whether the Hormuz closure can be broken, whether Ira
     </div>
     
     <script>
+        let scale = 1;
+        let panning = false;
+        let pointX = 0;
+        let pointY = 0;
+        let startX = 0;
+        let startY = 0;
+        let lastTap = 0;
+        
         function openLightbox(imgElement) {
             const lightbox = document.getElementById('lightbox');
             const lightboxImg = document.getElementById('lightbox-img');
@@ -394,12 +408,109 @@ What comes next depends on whether the Hormuz closure can be broken, whether Ira
             lightboxImg.alt = imgElement.alt;
             lightbox.style.display = 'flex';
             document.body.style.overflow = 'hidden';
+            
+            // Reset zoom
+            scale = 1;
+            pointX = 0;
+            pointY = 0;
+            applyTransform();
         }
         
-        function closeLightbox() {
+        function closeLightbox(e) {
+            // Don't close if clicking on zoomed image
+            if (scale > 1 && e && e.target.id === 'lightbox-img') {
+                return;
+            }
+            
             const lightbox = document.getElementById('lightbox');
             lightbox.style.display = 'none';
             document.body.style.overflow = 'auto';
+            scale = 1;
+            pointX = 0;
+            pointY = 0;
+        }
+        
+        function applyTransform() {
+            const lightboxImg = document.getElementById('lightbox-img');
+            lightboxImg.style.transform = `translate(${pointX}px, ${pointY}px) scale(${scale})`;
+        }
+        
+        // Double-tap to zoom
+        const lightboxImg = document.getElementById('lightbox-img');
+        lightboxImg.addEventListener('touchend', function(e) {
+            const currentTime = new Date().getTime();
+            const tapLength = currentTime - lastTap;
+            
+            if (tapLength < 300 && tapLength > 0) {
+                e.preventDefault();
+                
+                if (scale === 1) {
+                    // Zoom in at tap point
+                    const rect = lightboxImg.getBoundingClientRect();
+                    const touch = e.changedTouches[0];
+                    const x = touch.clientX - rect.left - rect.width / 2;
+                    const y = touch.clientY - rect.top - rect.height / 2;
+                    
+                    scale = 2.5;
+                    pointX = -x * (scale - 1);
+                    pointY = -y * (scale - 1);
+                } else {
+                    // Zoom out
+                    scale = 1;
+                    pointX = 0;
+                    pointY = 0;
+                }
+                applyTransform();
+            }
+            lastTap = currentTime;
+        });
+        
+        // Pinch to zoom
+        let initialDistance = 0;
+        let initialScale = 1;
+        
+        lightboxImg.addEventListener('touchstart', function(e) {
+            if (e.touches.length === 2) {
+                e.preventDefault();
+                initialDistance = getDistance(e.touches[0], e.touches[1]);
+                initialScale = scale;
+            } else if (e.touches.length === 1 && scale > 1) {
+                panning = true;
+                startX = e.touches[0].clientX - pointX;
+                startY = e.touches[0].clientY - pointY;
+            }
+        });
+        
+        lightboxImg.addEventListener('touchmove', function(e) {
+            if (e.touches.length === 2) {
+                e.preventDefault();
+                const currentDistance = getDistance(e.touches[0], e.touches[1]);
+                scale = Math.min(Math.max(1, initialScale * (currentDistance / initialDistance)), 5);
+                applyTransform();
+            } else if (panning && e.touches.length === 1) {
+                e.preventDefault();
+                pointX = e.touches[0].clientX - startX;
+                pointY = e.touches[0].clientY - startY;
+                applyTransform();
+            }
+        });
+        
+        lightboxImg.addEventListener('touchend', function(e) {
+            if (e.touches.length === 0) {
+                panning = false;
+                if (scale < 1) {
+                    scale = 1;
+                    pointX = 0;
+                    pointY = 0;
+                    applyTransform();
+                }
+            }
+        });
+        
+        function getDistance(touch1, touch2) {
+            const dx = touch1.clientX - touch2.clientX;
+            const dy = touch1.clientY - touch2.clientY;
+            return Math.sqrt(dx * dx + dy * dy);
         }
         
         // Close on ESC key
@@ -408,6 +519,9 @@ What comes next depends on whether the Hormuz closure can be broken, whether Ira
                 closeLightbox();
             }
         });
+        
+        // Prevent lightbox from closing when clicking zoomed image
+        document.getElementById('lightbox').addEventListener('click', closeLightbox);
     </script>
 </body>
 </html>
