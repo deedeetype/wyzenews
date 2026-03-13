@@ -19,6 +19,25 @@ body {
     padding: 0 20px;
 }
 
+/* Logo */
+.logo-container {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    z-index: 10;
+}
+
+.logo {
+    width: 180px;
+    height: auto;
+    filter: drop-shadow(0 4px 12px rgba(102, 126, 234, 0.3));
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
 /* Hero Section */
 .hero {
     min-height: 100vh;
@@ -325,6 +344,15 @@ body {
 
 /* Responsive */
 @media (max-width: 768px) {
+    .logo-container {
+        top: 20px;
+        right: 20px;
+    }
+    
+    .logo {
+        width: 120px;
+    }
+    
     .hero-title {
         font-size: 2.5rem;
     }
@@ -351,6 +379,15 @@ body {
 }
 
 @media (max-width: 480px) {
+    .logo-container {
+        top: 15px;
+        right: 15px;
+    }
+    
+    .logo {
+        width: 100px;
+    }
+    
     .hero-title {
         font-size: 2rem;
     }
