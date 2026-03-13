@@ -170,6 +170,72 @@
         </div>
     </div>
 
-    <script src="unsubscribe-script.js"></script>
+    <script>
+        // Get token from URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const token = urlParams.get('token');
+
+        const loadingEl = document.getElementById('loading');
+        const successEl = document.getElementById('success');
+        const errorEl = document.getElementById('error');
+        const errorTextEl = document.getElementById('error-text');
+
+        async function unsubscribe() {
+            if (!token) {
+                showError('Invalid unsubscribe link. No token provided.');
+                return;
+            }
+
+            confirmationEl.style.display = 'none';
+            loadingEl.style.display = 'flex';
+
+            try {
+                const response = await fetch('/.netlify/functions/unsubscribe', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ token })
+                });
+
+                const data = await response.json();
+
+                if (response.ok && data.success) {
+                    showSuccess();
+                } else {
+                    showError(data.error || 'Failed to unsubscribe. Please try again.');
+                }
+            } catch (error) {
+                console.error('Unsubscribe error:', error);
+                showError('Network error. Please check your connection and try again.');
+            }
+        }
+
+        function showSuccess() {
+            loadingEl.style.display = 'none';
+            errorEl.style.display = 'none';
+            successEl.style.display = 'block';
+        }
+
+        function showError(message) {
+            confirmationEl.style.display = 'none';
+            loadingEl.style.display = 'none';
+            successEl.style.display = 'none';
+            errorTextEl.textContent = message;
+            errorEl.style.display = 'block';
+        }
+
+        // Show confirmation screen instead of auto-run
+        if (token) {
+            confirmationEl.style.display = 'block';
+        } else {
+            showError('Invalid unsubscribe link. No token provided.');
+        }
+        
+        // Handle confirm button click
+        if (confirmBtn) {
+            confirmBtn.addEventListener('click', unsubscribe);
+        }
+    </script>
 </body>
 </html>
