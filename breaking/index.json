@@ -21,5 +21,28 @@
         "url": "breaking/2026-03-12/3.html"
       }
     ]
+  },
+  "2026-03-13": {
+    "date": "March 13, 2026",
+    "stories": [
+      {
+        "headline": "Iran Launches Massive Attacks on Gulf States, Disrupting Global Oil Supply",
+        "summary": "Iran struck Gulf infrastructure and shipping, jolting oil markets. The IEA released 400M barrels as U.S. forces hit Iranian targets near the Strait of...",
+        "image": "breaking/2026-03-13/breaking_1.png",
+        "url": "breaking/2026-03-13/1.html"
+      },
+      {
+        "headline": "Twin Domestic Terror Attacks Strike US: Michigan Synagogue and Virginia University",
+        "summary": "Two suspected terror attacks hit the U.S.: a vehicle assault at a Michigan synagogue and a deadly shooting targeting military trainees at a Virginia u...",
+        "image": "breaking/2026-03-13/breaking_2.png",
+        "url": "breaking/2026-03-13/2.html"
+      },
+      {
+        "headline": "US Military Refueling Plane Crashes in Iraq Amid Middle East Operations",
+        "summary": "A US KC-135 refueling plane crashed in western Iraq during regional operations, with rescue efforts ongoing and crew status unclear amid heightened te...",
+        "image": "breaking/2026-03-13/breaking_3.png",
+        "url": "breaking/2026-03-13/3.html"
+      }
+    ]
   }
 }
