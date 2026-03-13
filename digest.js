@@ -62,6 +62,32 @@ async function loadDigest(dateSlug, targetElement) {
 // Load today's digest on page load
 async function loadToday() {
     const today = formatDate(new Date());
+    
+    try {
+        const response = await fetch('/breaking/index.json');
+        const data = await response.json();
+        
+        if (!data[today]) {
+            // No digest for today - show "brewing" message
+            todayDigest.innerHTML = `
+                <div style="text-align: center; padding: 60px 20px; grid-column: 1 / -1;">
+                    <div style="margin-bottom: 30px;">
+                        <img src="/assets/WyzeNewsLogo.png" alt="WyzeNews" style="width: 150px; height: auto;">
+                    </div>
+                    <h3 style="color: #667eea; font-size: 28px; margin-bottom: 15px; font-weight: 700;">
+                        The owl is brewing fresh news!
+                    </h3>
+                    <p style="color: #8b8ba7; font-size: 18px; line-height: 1.6;">
+                        Check back later for today's breaking stories.
+                    </p>
+                </div>
+            `;
+            return;
+        }
+    } catch (error) {
+        console.error('Error checking digest:', error);
+    }
+    
     await loadDigest(today, todayDigest);
 }
 
