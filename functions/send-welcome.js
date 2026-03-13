@@ -91,6 +91,14 @@ exports.handler = async (event, context) => {
             padding: 40px 30px;
             text-align: center;
         }
+        .header-logo {
+            margin-bottom: 20px;
+        }
+        .header-logo img {
+            width: 180px;
+            max-width: 80%;
+            height: auto;
+        }
         .header h1 {
             color: #ffffff;
             font-size: 32px;
@@ -152,6 +160,9 @@ exports.handler = async (event, context) => {
 <body>
     <div class="container">
         <div class="header">
+            <div class="header-logo">
+                <img src="https://wyzenews.com/assets/WyzeNewsLogo.png" alt="WyzeNews Logo">
+            </div>
             <h1>🌍 Welcome to WyzeNews!</h1>
         </div>
         

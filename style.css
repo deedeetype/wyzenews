@@ -21,14 +21,13 @@ body {
 
 /* Logo */
 .logo-container {
-    position: absolute;
-    top: 30px;
-    right: 40px;
-    z-index: 10;
+    text-align: center;
+    padding: 40px 0 30px 0;
 }
 
 .logo {
-    width: 180px;
+    width: 200px;
+    max-width: 80%;
     height: auto;
     filter: drop-shadow(0 4px 12px rgba(102, 126, 234, 0.3));
     transition: transform 0.3s ease;
@@ -345,12 +344,11 @@ body {
 /* Responsive */
 @media (max-width: 768px) {
     .logo-container {
-        top: 20px;
-        right: 20px;
+        padding: 30px 0 20px 0;
     }
     
     .logo {
-        width: 120px;
+        width: 160px;
     }
     
     .hero-title {
@@ -380,12 +378,11 @@ body {
 
 @media (max-width: 480px) {
     .logo-container {
-        top: 15px;
-        right: 15px;
+        padding: 20px 0 15px 0;
     }
     
     .logo {
-        width: 100px;
+        width: 140px;
     }
     
     .hero-title {
