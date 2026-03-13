@@ -66,7 +66,7 @@ exports.handler = async (event, context) => {
     console.log('[Subscribe] Checking for existing subscription...');
     const { data: existing, error: checkError } = await supabase
       .from('digest_subscribers')
-      .select('id, email')
+      .select('id, email, active')
       .eq('email', email.toLowerCase())
       .single();
 
