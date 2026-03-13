@@ -27,7 +27,7 @@
     <meta name="twitter:image:alt" content="US KC-135 Refueling Jet Lost Over Iraq Amid Conflicting Claims">
     
     <!-- Additional Meta -->
-    <meta property="article:published_time" content="2026-03-13T09:07:28.693262">
+    <meta property="article:published_time" content="2026-03-13T09:23:46.095256">
     <meta property="article:author" content="WyzeNews">
     
     <style>
@@ -253,6 +253,29 @@
             text-decoration: none;
         }
         
+        /* Lightbox */
+        #lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.95);
+            z-index: 9999;
+            align-items: center;
+            justify-content: center;
+            cursor: zoom-out;
+        }
+        
+        #lightbox img {
+            max-width: 95vw;
+            max-height: 95vh;
+            object-fit: contain;
+            border-radius: 8px;
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.8);
+        }
+        
         @media (max-width: 768px) {
             .header-logo img {
                 width: 80px;
@@ -274,6 +297,11 @@
             .social-share {
                 flex-wrap: wrap;
             }
+            
+            #lightbox img {
+                max-width: 98vw;
+                max-height: 98vh;
+            }
         }
     </style>
 </head>
@@ -293,9 +321,7 @@
         <article class="article">
             <h1 class="article-title">US KC-135 Refueling Jet Lost Over Iraq Amid Conflicting Claims</h1>
             
-            <a href="breaking_2.png" target="_blank" style="display: block; cursor: zoom-in;">
-                <img src="breaking_2.png" alt="US KC-135 Refueling Jet Lost Over Iraq Amid Conflicting Claims" class="article-image">
-            </a>
+            <img src="breaking_2.png" alt="US KC-135 Refueling Jet Lost Over Iraq Amid Conflicting Claims" class="article-image" onclick="openLightbox(this)" style="cursor: zoom-in;">
             
             <div class="article-summary">A US KC-135 refueling aircraft has been lost over Iraq in an incident that remains unclear, underscoring how volatile the regional conflict has become in its third week. The episode matters because aerial refueling is central to US air operations, and any loss of a tanker raises immediate questions about force protection, mission tempo, and whether regional militias or state actors are expanding the fight.
 
@@ -352,5 +378,34 @@ The key dispute is over what happened and what it signifies. Iran has also claim
             </p>
         </div>
     </div>
+    
+    <!-- Lightbox -->
+    <div id="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" alt="">
+    </div>
+    
+    <script>
+        function openLightbox(imgElement) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            lightboxImg.src = imgElement.src;
+            lightboxImg.alt = imgElement.alt;
+            lightbox.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+        
+        // Close on ESC key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+    </script>
 </body>
 </html>
