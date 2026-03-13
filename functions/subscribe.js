@@ -77,14 +77,30 @@ exports.handler = async (event, context) => {
     }
 
     if (existing) {
-      // Email already subscribed
-      console.log('[Subscribe] Email already subscribed:', email);
+      // Email already exists - reactivate if inactive
+      console.log('[Subscribe] Email already exists:', email);
+      
+      // Update to active=true (in case they unsubscribed before)
+      const { error: updateError } = await supabase
+        .from('digest_subscribers')
+        .update({ 
+          active: true,
+          updated_at: new Date().toISOString()
+        })
+        .eq('id', existing.id);
+      
+      if (updateError) {
+        console.error('[Subscribe] ERROR: Reactivation failed:', updateError);
+      } else {
+        console.log('[Subscribe] Reactivated subscription:', email);
+      }
+      
       return {
         statusCode: 200,
         headers,
         body: JSON.stringify({
           success: true,
-          message: 'Already subscribed',
+          message: 'Subscription reactivated',
           alreadySubscribed: true
         })
       };

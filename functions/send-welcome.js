@@ -110,7 +110,7 @@ exports.handler = async (event, context) => {
             margin: 0 0 20px 0;
         }
         .feature-box {
-            background: rgba(102, 126, 234, 0.1);
+            background: rgba(102, 126, 234, 0.2);
             border-left: 4px solid #667eea;
             padding: 15px 20px;
             margin: 20px 0;
@@ -118,6 +118,19 @@ exports.handler = async (event, context) => {
         }
         .feature-box strong {
             color: #ffffff;
+        }
+        .feature-box {
+            color: #ffffff;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 30px;
+            margin: 20px 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
         }
         .footer {
             background-color: #0f0f1e;
@@ -145,7 +158,7 @@ exports.handler = async (event, context) => {
         <div class="content">
             <h2>Thanks for subscribing! 🎉</h2>
             
-            <p>You're all set to receive your daily digest of breaking news with stunning AI-generated comic strip visuals.</p>
+            <p>You're all set to receive your daily digest of breaking news with stunning comic strip visuals.</p>
             
             <div class="feature-box">
                 <strong>📰 What you'll get:</strong><br>
@@ -157,6 +170,10 @@ exports.handler = async (event, context) => {
             
             <p>Your first digest will arrive tomorrow morning. We scan the world's most significant events and present them in an engaging, visual format.</p>
             
+            <div style="text-align: center; margin: 30px 0;">
+                <a href="https://wyzenews.com" class="button">Visit WyzeNews</a>
+            </div>
+            
             <p style="color: #8b8ba7; font-size: 14px; margin-top: 30px;">
                 <strong>Note:</strong> If you didn't sign up for this, you can unsubscribe at any time using the link below.
             </p>
@@ -164,8 +181,7 @@ exports.handler = async (event, context) => {
         
         <div class="footer">
             <p>
-                <strong>WyzeNews</strong> by <a href="https://labwyze.com">Labwyze Inc.</a><br>
-                Powered by Perplexity AI & Google Gemini
+                <strong>WyzeNews</strong> by <a href="https://labwyze.com">Labwyze Inc.</a>
             </p>
             <p class="unsubscribe">
                 <a href="${unsubscribeUrl}">Unsubscribe</a>
