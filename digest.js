@@ -31,7 +31,8 @@ function createBreakingCard(story, index) {
 // Load digest for a specific date
 async function loadDigest(dateSlug, targetElement) {
     try {
-        const response = await fetch('/breaking/index.json');
+        // Add cache-busting timestamp
+        const response = await fetch(`/breaking/index.json?t=${Date.now()}`);
         const data = await response.json();
         
         if (data[dateSlug]) {
@@ -64,7 +65,8 @@ async function loadToday() {
     const today = formatDate(new Date());
     
     try {
-        const response = await fetch('/breaking/index.json');
+        // Add cache-busting timestamp to always get fresh data
+        const response = await fetch(`/breaking/index.json?t=${Date.now()}`);
         const data = await response.json();
         
         if (!data[today]) {
