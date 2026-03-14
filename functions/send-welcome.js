@@ -181,6 +181,11 @@ exports.handler = async (event, context) => {
             
             <p>Your first digest will arrive tomorrow morning. We scan the world's most significant events and present them in an engaging, visual format.</p>
             
+            <div style="background: rgba(255, 193, 7, 0.15); border-left: 4px solid #ffc107; padding: 15px 20px; margin: 25px 0; border-radius: 8px;">
+                <strong style="color: #ffc107;">📬 Important:</strong>
+                <span style="color: #e0e0e0;"> Please check your <strong>Spam/Junk</strong> folder if you don't see our emails. To ensure delivery, add <strong>noreply@wyzenews.com</strong> to your contacts.</span>
+            </div>
+            
             <div style="text-align: center; margin: 30px 0;">
                 <a href="https://wyzenews.com" class="button">Visit WyzeNews</a>
             </div>
