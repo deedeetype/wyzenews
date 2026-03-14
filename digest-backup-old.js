@@ -1,6 +1,7 @@
 // WyzeNews - Homepage Digest Loader with Recent Archive
+// Loads today's breaking news and recent 7 days automatically
 
-// DOM Elements  
+// DOM Elements
 const todayDigest = document.getElementById('today-digest');
 const recentArchive = document.getElementById('recent-archive');
 
@@ -25,7 +26,7 @@ function createBreakingCard(story) {
     `;
 }
 
-// Load today's digest
+// Load today's digest on page load
 async function loadToday() {
     const today = formatDate(new Date());
     
@@ -59,7 +60,7 @@ async function loadToday() {
         console.error('Error loading today:', error);
         todayDigest.innerHTML = `
             <p style="text-align: center; color: #f56565; grid-column: 1 / -1;">
-                Error loading digest.
+                Error loading digest. Please try again.
             </p>
         `;
     }
@@ -75,7 +76,7 @@ async function loadRecentArchive() {
         
         let html = '';
         
-        // Loop last 7 days (yesterday to 7 days ago)
+        // Loop through last 7 days (yesterday to 7 days ago)
         for (let i = 1; i <= 7; i++) {
             const date = new Date(today);
             date.setDate(today.getDate() - i);
@@ -103,7 +104,7 @@ async function loadRecentArchive() {
         }
         
     } catch (error) {
-        console.error('Error loading archive:', error);
+        console.error('Error loading recent archive:', error);
         recentArchive.innerHTML = '<p style="text-align: center; color: #f56565;">Error loading archives.</p>';
     }
 }
