@@ -44,5 +44,28 @@
         "url": "breaking/2026-03-13/3.html"
       }
     ]
+  },
+  "2026-03-14": {
+    "date": "March 14, 2026",
+    "stories": [
+      {
+        "headline": "Iran-US War Intensifies: Strait of Hormuz Remains Closed as Oil Prices Soar",
+        "summary": "The Iran-US war has entered week two with Tehran keeping the Strait of Hormuz shut, sending oil prices higher as Israel expands strikes and markets br...",
+        "image": "breaking/2026-03-14/breaking_1.png",
+        "url": "breaking/2026-03-14/1.html"
+      },
+      {
+        "headline": "US KC-135 Refueling Jet Lost Over Iraq Amid Conflicting Claims",
+        "summary": "A US KC-135 tanker was lost over Iraq as Washington and Tehran trade conflicting claims, adding fresh uncertainty and escalation risk to the region’s ...",
+        "image": "breaking/2026-03-14/breaking_2.png",
+        "url": "breaking/2026-03-14/2.html"
+      },
+      {
+        "headline": "Two Deaths at For-Profit Plasma Donation Centers Spark Public Health Concerns",
+        "summary": "CBC reports two deaths at Winnipeg for-profit plasma centres in four months, fueling scrutiny of donor safety, regulation, and oversight in Canada....",
+        "image": "breaking/2026-03-14/breaking_3.png",
+        "url": "breaking/2026-03-14/3.html"
+      }
+    ]
   }
 }
