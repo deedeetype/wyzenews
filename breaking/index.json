@@ -67,5 +67,28 @@
         "url": "breaking/2026-03-14/3.html"
       }
     ]
+  },
+  "2026-03-15": {
+    "date": "March 15, 2026",
+    "stories": [
+      {
+        "headline": "Severe Storm Intensifies Across US Midwest and East Coast",
+        "summary": "A major storm is sweeping from the upper Midwest to the East, bringing heavy snow, damaging winds and possible tornadoes while snarling travel and kno...",
+        "image": "breaking/2026-03-15/breaking_1.png",
+        "url": "breaking/2026-03-15/1.html"
+      },
+      {
+        "headline": "Second Antisemitic Attack in Amsterdam Targets Jewish School",
+        "summary": "An explosion damaged a Jewish school in Amsterdam in the city’s second antisemitic attack in two days, prompting tighter security and alarm over threa...",
+        "image": "breaking/2026-03-15/breaking_2.png",
+        "url": "breaking/2026-03-15/2.html"
+      },
+      {
+        "headline": "Airlines Worldwide Hike Fares as Oil Prices Surge from Strait of Hormuz Crisis",
+        "summary": "Airlines are raising fares as a Strait of Hormuz crisis drives jet fuel prices sharply higher, squeezing carriers and signaling broader travel cost in...",
+        "image": "breaking/2026-03-15/breaking_3.png",
+        "url": "breaking/2026-03-15/3.html"
+      }
+    ]
   }
 }
