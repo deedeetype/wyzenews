@@ -90,5 +90,28 @@
         "url": "breaking/2026-03-15/3.html"
       }
     ]
+  },
+  "2026-03-16": {
+    "date": "March 16, 2026",
+    "stories": [
+      {
+        "headline": "AI Breakthrough Week: Major Product Launches Mark Turning Point in Artificial Intelligence",
+        "summary": "AI Breakthrough Week saw major launches from NVIDIA, Google, OpenAI, and Microsoft, signaling faster enterprise adoption as firms boost AI spending in...",
+        "image": "breaking/2026-03-16/breaking_1.png",
+        "url": "breaking/2026-03-16/1.html"
+      },
+      {
+        "headline": "NCAA March Madness 2026: Selection Sunday Reveals Tournament Bracket",
+        "summary": "Selection Sunday set the 68-team 2026 NCAA men’s tournament field. First Four starts March 17, with the Final Four and title game April 4-6 in Indiana...",
+        "image": "breaking/2026-03-16/breaking_2.png",
+        "url": "breaking/2026-03-16/2.html"
+      },
+      {
+        "headline": "Hundreds of Children Killed as Middle East Conflict Spreads",
+        "summary": "Child deaths are mounting as Middle East fighting spreads. A US probe confirmed a Tomahawk strike hit a school in Iran, while UNICEF warns displacemen...",
+        "image": "breaking/2026-03-16/breaking_3.png",
+        "url": "breaking/2026-03-16/3.html"
+      }
+    ]
   }
 }
