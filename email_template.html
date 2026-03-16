@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WyzeNews - {{ date }}</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #e0e0e0;
+            background-color: #1a1a2e;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, #1e1e3f 0%, #2a2a4a 100%);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 40px 30px;
+            text-align: center;
+            border-bottom: 4px solid #ff6b6b;
+        }
+        
+        .header-logo {
+            margin-bottom: 20px;
+        }
+        
+        .header-logo img {
+            width: 180px;
+            max-width: 80%;
+            height: auto;
+        }
+        
+        .header h1 {
+            color: #ffffff;
+            font-size: 42px;
+            font-weight: 800;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .header .date {
+            color: #ffd93d;
+            font-size: 18px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .stories {
+            padding: 30px;
+        }
+        
+        .story-card {
+            background: rgba(30, 30, 63, 0.6);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 30px;
+            border: 2px solid #3a3a5a;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .story-card:last-child {
+            margin-bottom: 0;
+        }
+        
+        .story-title {
+            color: #ffffff;
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.3;
+        }
+        
+        .story-image {
+            width: 100%;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            border: 3px solid #3a3a5a;
+        }
+        
+        .story-summary {
+            color: #b8b8d1;
+            font-size: 17px;
+            line-height: 1.8;
+            margin-bottom: 25px;
+        }
+        
+        .key-takeaways {
+            background: rgba(102, 126, 234, 0.1);
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        
+        .key-takeaways h3 {
+            color: #667eea;
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+        
+        .key-takeaways ul {
+            list-style: disc;
+            padding-left: 20px;
+            margin: 0;
+        }
+        
+        .key-takeaways li {
+            color: #d0d0e0;
+            font-size: 15px;
+            padding: 8px 0;
+            padding-left: 20px;
+            position: relative;
+            list-style-type: disc;
+            list-style-position: inside;
+        }
+        
+        .key-takeaways li::before {
+            content: "•";
+            position: absolute;
+            left: 0px;
+            color: #667eea;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        .story-source {
+            color: #8b8ba7;
+            font-size: 14px;
+            font-style: italic;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .story-source::before {
+            content: "📌";
+        }
+        
+        .social-share {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            padding-top: 15px;
+            border-top: 1px solid #3a3a5a;
+        }
+        
+        .social-share-label {
+            color: #8b8ba7;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        
+        .social-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .social-icon svg {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+            stroke: currentColor;
+        }
+        
+        .social-icon:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+        }
+        
+        .social-facebook {
+            background: #1877f2;
+            color: #ffffff;
+        }
+        
+        .social-linkedin {
+            background: #0a66c2;
+            color: #ffffff;
+        }
+        
+        .social-pinterest {
+            background: #e60023;
+            color: #ffffff;
+        }
+        
+        .footer {
+            background-color: #0f0f1e;
+            padding: 30px;
+            text-align: center;
+            color: #7a7a9e;
+            font-size: 14px;
+        }
+        
+        .footer a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        
+        .footer .unsubscribe {
+            margin-top: 15px;
+            font-size: 12px;
+        }
+        
+        /* Mobile Optimization */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                border-radius: 12px;
+            }
+            
+            .header {
+                padding: 30px 20px;
+            }
+            
+            .header h1 {
+                font-size: 36px;
+                margin-bottom: 8px;
+            }
+            
+            .header .date {
+                font-size: 15px;
+                letter-spacing: 1px;
+            }
+            
+            .stories {
+                padding: 15px;
+            }
+            
+            .story-card {
+                padding: 20px;
+                margin-bottom: 20px;
+                border-radius: 12px;
+            }
+            
+            .story-title {
+                font-size: 24px;
+                margin-bottom: 15px;
+                line-height: 1.3;
+            }
+            
+            .story-image {
+                margin-bottom: 15px;
+                border-radius: 8px;
+                border-width: 2px;
+            }
+            
+            .story-summary {
+                font-size: 17px;
+                line-height: 1.7;
+                margin-bottom: 20px;
+            }
+            
+            .key-takeaways {
+                padding: 15px;
+                margin-bottom: 15px;
+            }
+            
+            .key-takeaways h3 {
+                font-size: 15px;
+                margin-bottom: 10px;
+            }
+            
+            .key-takeaways li {
+                font-size: 15px;
+                padding: 6px 0;
+                padding-left: 20px;
+            }
+            
+            .story-source {
+                font-size: 13px;
+                margin-bottom: 15px;
+            }
+            
+            .social-share {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+                padding-top: 15px;
+            }
+            
+            .social-share-label {
+                font-size: 15px;
+            }
+            
+            .social-icons-row {
+                display: flex;
+                gap: 12px;
+                flex-wrap: wrap;
+            }
+            
+            .social-icon {
+                width: 48px;
+                height: 48px;
+                border-radius: 12px;
+            }
+            
+            .social-icon svg {
+                width: 22px;
+                height: 22px;
+            }
+            
+            .footer {
+                padding: 25px 20px;
+                font-size: 13px;
+            }
+            
+            .footer .unsubscribe {
+                font-size: 11px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-logo">
+                <img src="https://wyzenews.com/assets/WyzeNewsLogo.png" alt="WyzeNews Logo">
+            </div>
+            <h1>🌍 WYZENEWS</h1>
+            <div class="date">{{ date }}</div>
+        </div>
+        
+        <div class="stories">
+            {% for story in stories %}
+            <div class="story-card">
+                <h2 class="story-title">{{ story.headline }}</h2>
+                
+                {% if story.image_path %}
+                <img src="cid:breaking_{{ loop.index }}" alt="{{ story.headline }}" class="story-image">
+                {% endif %}
+                
+                <p class="story-summary">{{ story.summary_enhanced }}</p>
+                
+                {% if story.key_takeaways %}
+                <div class="key-takeaways">
+                    <h3>🔑 Key Takeaways</h3>
+                    <ul>
+                        {% for takeaway in story.key_takeaways %}
+                        <li>{{ takeaway }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
+                
+                <div class="story-source">
+                    {{ story.sources[0] if story.sources else "Multiple Sources" }}
+                </div>
+                
+                <div style="margin: 15px 0; padding-top: 15px; border-top: 1px solid #3a3a5a;">
+                    <a href="{{ story.share_url }}" style="color: #667eea; text-decoration: none; font-size: 15px; font-weight: 600;">
+                        📖 Read full story on wyzenews.com →
+                    </a>
+                </div>
+                
+                <div class="social-share">
+                    <span class="social-share-label">Share:</span>
+                    <div class="social-icons-row">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u={{ story.share_url }}" class="social-icon social-facebook" title="Share on Facebook">
+                        <span style="color: white; font-size: 24px; font-weight: bold;">f</span>
+                    </a>
+                    <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ story.share_url }}" class="social-icon social-linkedin" title="Share on LinkedIn">
+                        <span style="color: white; font-size: 24px; font-weight: bold;">in</span>
+                    </a>
+                    <a href="https://pinterest.com/pin/create/button/?url={{ story.share_url }}&description={{ story.headline | urlencode }}" class="social-icon social-pinterest" title="Share on Pinterest">
+                        <span style="color: white; font-size: 24px; font-weight: bold;">P</span>
+                    </a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        
+        <div style="text-align: center; padding: 30px 20px; background: rgba(102, 126, 234, 0.1); border-top: 2px solid #3a3a5a;">
+            <p style="color: #b8b8d1; font-size: 16px; margin-bottom: 15px;">
+                Want to explore more breaking news from previous days?
+            </p>
+            <a href="https://wyzenews.com" style="display: inline-block; padding: 12px 30px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #ffffff; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 16px;">
+                📰 Visit WyzeNews Archive
+            </a>
+        </div>
+        
+        <div class="footer">
+            <p>
+                <strong>WyzeNews</strong> by <a href="https://labwyze.com">Labwyze Inc.</a>
+            </p>
+            <p class="unsubscribe">
+                <a href="{{ unsubscribe_link }}">Unsubscribe</a> | 
+                <a href="https://wyzenews.com/privacy.html">Privacy Policy</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
