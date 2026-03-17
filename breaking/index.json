@@ -113,5 +113,28 @@
         "url": "breaking/2026-03-16/3.html"
       }
     ]
+  },
+  "2026-03-17": {
+    "date": "March 17, 2026",
+    "stories": [
+      {
+        "headline": "Federal Judge Blocks RFK Jr.'s Vaccine Schedule Changes",
+        "summary": "A federal judge temporarily blocked RFK Jr.’s proposed vaccine schedule changes, halting a major HHS policy shift as legal and public health battles i...",
+        "image": "breaking/2026-03-17/breaking_1.png",
+        "url": "breaking/2026-03-17/1.html"
+      },
+      {
+        "headline": "NVIDIA GTC 2026: Jensen Huang Announces Major AI Breakthroughs",
+        "summary": "At GTC 2026, NVIDIA unveiled new AI chips, AI factories and robotics advances. Investors cheered: shares jumped as Huang projected strong AI demand in...",
+        "image": "breaking/2026-03-17/breaking_2.png",
+        "url": "breaking/2026-03-17/2.html"
+      },
+      {
+        "headline": "Réunion Island Volcano: Lava Reaches Ocean for First Time in 20 Years",
+        "summary": "Lava from a Réunion Island eruption has reached the sea for the first time in nearly 20 years, highlighting the island’s intense volcanic activity and...",
+        "image": "breaking/2026-03-17/breaking_3.png",
+        "url": "breaking/2026-03-17/3.html"
+      }
+    ]
   }
 }
