@@ -136,5 +136,28 @@
         "url": "breaking/2026-03-17/3.html"
       }
     ]
+  },
+  "2026-03-18": {
+    "date": "March 18, 2026",
+    "stories": [
+      {
+        "headline": "Escalating US-Iran War with Attacks on US Assets and Allies",
+        "summary": "US-Iran tensions surged after Iranian strikes hit US and allied targets. Washington sent Marines, aired strike footage, and warned Russia not to back ...",
+        "image": "breaking/2026-03-18/breaking_1.png",
+        "url": "breaking/2026-03-18/1.html"
+      },
+      {
+        "headline": "Apple Enters Foldable Phone Market",
+        "summary": "Apple is reportedly entering the foldable phone market, starting with designs similar to rivals before moving to edge-to-edge models as early as 2027....",
+        "image": "breaking/2026-03-18/breaking_2.png",
+        "url": "breaking/2026-03-18/2.html"
+      },
+      {
+        "headline": "NASA Artemis II Crewed Lunar Mission Targets April 2026 Launch",
+        "summary": "NASA is targeting April 1, 2026, for Artemis II, the first crewed lunar flyby mission since Apollo 17. Four astronauts will fly Orion around the Moon ...",
+        "image": "breaking/2026-03-18/breaking_3.png",
+        "url": "breaking/2026-03-18/3.html"
+      }
+    ]
   }
 }
