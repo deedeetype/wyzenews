@@ -159,5 +159,28 @@
         "url": "breaking/2026-03-18/3.html"
       }
     ]
+  },
+  "2026-03-19": {
+    "date": "March 19, 2026",
+    "stories": [
+      {
+        "headline": "Israel Strikes Iran's South Pars Gas Field, Iran Retaliates on Qatar LNG Terminal",
+        "summary": "Israel hit Iran’s South Pars gas field, triggering Iranian strikes on Qatar’s LNG terminal. Energy markets surged as Gulf shipping and regional securi...",
+        "image": "breaking/2026-03-19/breaking_1.png",
+        "url": "breaking/2026-03-19/1.html"
+      },
+      {
+        "headline": "Federal Reserve Holds Rates Steady, Raises Inflation Outlook Amid War-Driven Oil Surge",
+        "summary": "The Fed left rates unchanged but lifted its inflation outlook as war-driven oil prices climb. Powell warned the Iran conflict adds uncertainty as gas ...",
+        "image": "breaking/2026-03-19/breaking_2.png",
+        "url": "breaking/2026-03-19/2.html"
+      },
+      {
+        "headline": "HSBC Announces Major Job Cuts Driven by AI Productivity Gains",
+        "summary": "HSBC says AI-led productivity gains will drive major job cuts, signaling how automation is reshaping banking as firms face cost pressure and economic ...",
+        "image": "breaking/2026-03-19/breaking_3.png",
+        "url": "breaking/2026-03-19/3.html"
+      }
+    ]
   }
 }
