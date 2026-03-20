@@ -182,5 +182,28 @@
         "url": "breaking/2026-03-19/3.html"
       }
     ]
+  },
+  "2026-03-20": {
+    "date": "March 20, 2026",
+    "stories": [
+      {
+        "headline": "Elon Musk Unveils Tesla AI5 Chip and SpaceX AI's Nvidia Partnership for Autonomous Future",
+        "summary": "Musk says Tesla is building its AI5 chip for self-driving and robots, while Tesla and SpaceX AI ramp Nvidia buys as SpaceX pushes toward solar-powered...",
+        "image": "breaking/2026-03-20/breaking_1.png",
+        "url": "breaking/2026-03-20/1.html"
+      },
+      {
+        "headline": "WNBA Finalizes Transformative CBA with Major Salary Increases for Players",
+        "summary": "The WNBA and players’ union finalized a landmark CBA that boosts salaries and benefits, marking a major step on pay equity as women’s basketball draws...",
+        "image": "breaking/2026-03-20/breaking_2.png",
+        "url": "breaking/2026-03-20/2.html"
+      },
+      {
+        "headline": "Finland Tops World Happiness Report Again as Global Well-Being Study Released",
+        "summary": "Finland again leads the World Happiness Report, with strong social support, trust in institutions and work-life balance driving its top ranking....",
+        "image": "breaking/2026-03-20/breaking_3.png",
+        "url": "breaking/2026-03-20/3.html"
+      }
+    ]
   }
 }
