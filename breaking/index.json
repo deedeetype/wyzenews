@@ -228,5 +228,28 @@
         "url": "breaking/2026-03-21/3.html"
       }
     ]
+  },
+  "2026-03-22": {
+    "date": "March 22, 2026",
+    "stories": [
+      {
+        "headline": "Trump Issues 48-Hour Ultimatum as US-Iran War Escalates",
+        "summary": "Trump gave Iran 48 hours to reopen the Strait of Hormuz or face US strikes, as US-Israeli attacks and Iranian missile fire widened the conflict....",
+        "image": "breaking/2026-03-22/breaking_1.png",
+        "url": "breaking/2026-03-22/1.html"
+      },
+      {
+        "headline": "Uber Signs $1.25 Billion Deal with Rivian for 50,000 AI Robotaxis",
+        "summary": "Uber will invest $1.25B with Rivian for up to 50,000 robotaxis built on the R2 SUV, signaling a major shift toward operating its own autonomous fleet....",
+        "image": "breaking/2026-03-22/breaking_2.png",
+        "url": "breaking/2026-03-22/2.html"
+      },
+      {
+        "headline": "Former FBI Director Robert Mueller Dies at 81",
+        "summary": "Former FBI Director Robert Mueller has died at 81. The longtime law enforcement leader also served as special counsel in the Russia probe, renewing de...",
+        "image": "breaking/2026-03-22/breaking_3.png",
+        "url": "breaking/2026-03-22/3.html"
+      }
+    ]
   }
 }
