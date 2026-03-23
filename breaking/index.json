@@ -251,5 +251,28 @@
         "url": "breaking/2026-03-22/3.html"
       }
     ]
+  },
+  "2026-03-23": {
+    "date": "March 23, 2026",
+    "stories": [
+      {
+        "headline": "'Project Hail Mary' Breaks Records with $80.6M Opening Weekend",
+        "summary": "Amazon MGM’s 'Project Hail Mary' opened to a record $80.6M, becoming the studio’s biggest debut ever and signaling major box-office momentum for its s...",
+        "image": "breaking/2026-03-23/breaking_1.png",
+        "url": "breaking/2026-03-23/1.html"
+      },
+      {
+        "headline": "Italy Votes on Sweeping Judiciary Reforms in Two-Day Referendum",
+        "summary": "Italy has opened a two-day referendum on major judiciary reforms, a vote that could reshape courts, politics and constitutional balance amid wider Eur...",
+        "image": "breaking/2026-03-23/breaking_2.png",
+        "url": "breaking/2026-03-23/2.html"
+      },
+      {
+        "headline": "Florida State Showcases 'Agentic AI' in Medicine at 2026 Expo",
+        "summary": "Florida State’s 2026 AI Expo highlights agentic AI in medicine, finance, and education, featuring LabGenie and speakers from OpenAI and MIT on autonom...",
+        "image": "breaking/2026-03-23/breaking_3.png",
+        "url": "breaking/2026-03-23/3.html"
+      }
+    ]
   }
 }
