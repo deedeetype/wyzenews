@@ -274,5 +274,28 @@
         "url": "breaking/2026-03-23/3.html"
       }
     ]
+  },
+  "2026-03-24": {
+    "date": "March 24, 2026",
+    "stories": [
+      {
+        "headline": "Trump Intensifies Iran Strikes While Claiming Uranium Negotiations",
+        "summary": "Trump escalated strikes on Iran as he claimed uranium talks were underway. Israeli attacks on Tehran and Iranian threats of retaliation have sharply r...",
+        "image": "breaking/2026-03-24/breaking_1.png",
+        "url": "breaking/2026-03-24/1.html"
+      },
+      {
+        "headline": "US House Holds Historic Impeachment Debate on President Trump",
+        "summary": "The House opened a historic impeachment debate on President Trump, setting up a likely vote and possible Senate trial as the White House denounces the...",
+        "image": "breaking/2026-03-24/breaking_2.png",
+        "url": "breaking/2026-03-24/2.html"
+      },
+      {
+        "headline": "Air Canada Jet Collides with Fire Truck at LaGuardia, Kills Two Pilots",
+        "summary": "An Air Canada jet hit a fire truck while landing at LaGuardia, killing both pilots and injuring others. Tower audio reportedly captured urgent warning...",
+        "image": "breaking/2026-03-24/breaking_3.png",
+        "url": "breaking/2026-03-24/3.html"
+      }
+    ]
   }
 }
