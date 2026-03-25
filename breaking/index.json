@@ -297,5 +297,28 @@
         "url": "breaking/2026-03-24/3.html"
       }
     ]
+  },
+  "2026-03-25": {
+    "date": "March 25, 2026",
+    "stories": [
+      {
+        "headline": "US Proposes Peace Deal as Iran-Israel War Enters Day 26",
+        "summary": "The US offered Iran a peace plan as the Iran-Israel war entered day 26. Missiles struck Tel Aviv, 1,000 more US troops deployed, and oil fell to $87 o...",
+        "image": "breaking/2026-03-25/breaking_1.png",
+        "url": "breaking/2026-03-25/1.html"
+      },
+      {
+        "headline": "US Government Shutdown Causes Massive Airport Delays Nationwide",
+        "summary": "The shutdown is triggering 4-7 hour airport security lines as TSA workers miss pay. Congress is scrambling to fund Homeland Security before Friday rec...",
+        "image": "breaking/2026-03-25/breaking_2.png",
+        "url": "breaking/2026-03-25/2.html"
+      },
+      {
+        "headline": "Colombian Military Plane Crash Kills 66 in Putumayo",
+        "summary": "A Colombian military plane crashed in Putumayo, killing at least 66 people and injuring dozens. Rescue teams remain at the site as authorities investi...",
+        "image": "breaking/2026-03-25/breaking_3.png",
+        "url": "breaking/2026-03-25/3.html"
+      }
+    ]
   }
 }
