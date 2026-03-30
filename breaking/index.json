@@ -320,5 +320,28 @@
         "url": "breaking/2026-03-25/3.html"
       }
     ]
+  },
+  "2026-03-30": {
+    "date": "March 30, 2026",
+    "stories": [
+      {
+        "headline": "US-Iran War Enters Second Month with Escalating Ground Invasion Threats",
+        "summary": "The US-Iran war has entered a second month, with 50,000+ US troops deployed, rising casualties, and fears of a ground invasion driving new threats and...",
+        "image": "breaking/2026-03-30/breaking_1.png",
+        "url": "breaking/2026-03-30/1.html"
+      },
+      {
+        "headline": "Record 8 Million Americans Join 'No Kings' Protests Against Trump Administration",
+        "summary": "More than 8 million Americans joined nationwide 'No Kings' protests against the Trump administration, marking the largest mass mobilization in recent ...",
+        "image": "breaking/2026-03-30/breaking_2.png",
+        "url": "breaking/2026-03-30/2.html"
+      },
+      {
+        "headline": "Longest DHS Shutdown Triggers Airport Chaos as 500+ TSA Agents Quit",
+        "summary": "A record DHS shutdown is snarling airports nationwide as 500+ TSA agents quit, triggering long lines and raising pressure on Washington to end the imp...",
+        "image": "breaking/2026-03-30/breaking_3.png",
+        "url": "breaking/2026-03-30/3.html"
+      }
+    ]
   }
 }
