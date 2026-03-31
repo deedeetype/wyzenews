@@ -343,5 +343,28 @@
         "url": "breaking/2026-03-30/3.html"
       }
     ]
+  },
+  "2026-03-31": {
+    "date": "March 31, 2026",
+    "stories": [
+      {
+        "headline": "NASA Prepares Historic Artemis 2 Moon Mission Launch Tomorrow",
+        "summary": "NASA plans to launch Artemis 2 on April 1, sending four astronauts around the moon on the first crewed lunar mission since Apollo 17 in 1972....",
+        "image": "breaking/2026-03-31/breaking_1.png",
+        "url": "breaking/2026-03-31/1.html"
+      },
+      {
+        "headline": "Celine Dion Announces Triumphant Return with 10 Paris Shows",
+        "summary": "Celine Dion will return to the stage with 10 Paris shows starting in September 2026, her first since stiff person syndrome forced her off tour. She sa...",
+        "image": "breaking/2026-03-31/breaking_2.png",
+        "url": "breaking/2026-03-31/2.html"
+      },
+      {
+        "headline": "FDA Expected to Approve First Oral Epinephrine for Severe Allergies",
+        "summary": "FDA is expected to decide by March 2026 on Anaphylm, the first oral epinephrine for severe allergic reactions, offering a needle-free alternative to a...",
+        "image": "breaking/2026-03-31/breaking_3.png",
+        "url": "breaking/2026-03-31/3.html"
+      }
+    ]
   }
 }
