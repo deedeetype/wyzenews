@@ -366,5 +366,28 @@
         "url": "breaking/2026-03-31/3.html"
       }
     ]
+  },
+  "2026-04-02": {
+    "date": "April 02, 2026",
+    "stories": [
+      {
+        "headline": "Iran War & Global Oil Crisis",
+        "summary": "Fighting between the U.S. and Iran continues despite Trump’s claim the war could end within weeks. Iran still holds the Strait of Hormuz, driving a se...",
+        "image": "breaking/2026-04-02/breaking_1.png",
+        "url": "breaking/2026-04-02/1.html"
+      },
+      {
+        "headline": "American Journalist Kidnapped in Baghdad",
+        "summary": "American journalist Shelly Kittleson was kidnapped in Baghdad on Tuesday, Iraqi officials said. Search efforts are underway in a case with major secur...",
+        "image": "breaking/2026-04-02/breaking_2.png",
+        "url": "breaking/2026-04-02/2.html"
+      },
+      {
+        "headline": "Major Earthquake Hits Indonesia",
+        "summary": "A major quake off Indonesia killed at least one person, damaged buildings and triggered a small tsunami, underscoring the country’s constant exposure ...",
+        "image": "breaking/2026-04-02/breaking_3.png",
+        "url": "breaking/2026-04-02/3.html"
+      }
+    ]
   }
 }
