@@ -389,5 +389,28 @@
         "url": "breaking/2026-04-02/3.html"
       }
     ]
+  },
+  "2026-04-03": {
+    "date": "April 03, 2026",
+    "stories": [
+      {
+        "headline": "U.S. Oil Futures Surge $11 in Biggest One-Day Jump Since 2020",
+        "summary": "U.S. oil futures jumped $11 to $111.54, their biggest one-day gain since 2020, as Middle East tensions and supply fears rattled global energy markets....",
+        "image": "breaking/2026-04-03/breaking_1.png",
+        "url": "breaking/2026-04-03/1.html"
+      },
+      {
+        "headline": "Tiger Woods Bodycam: 'I Was Just Talking to the President' After DUI Crash",
+        "summary": "New bodycam footage from Tiger Woods’ March 27 crash shows him telling officers, “I was just talking to the President,” adding intrigue to the DUI inv...",
+        "image": "breaking/2026-04-03/breaking_2.png",
+        "url": "breaking/2026-04-03/2.html"
+      },
+      {
+        "headline": "Random Stabbing Murder: Woman Walking Dog Killed in Florida",
+        "summary": "A Florida woman in her 70s was fatally stabbed while walking her dog in an apparently random attack. Police arrested Kirsten Francis, saying she had n...",
+        "image": "breaking/2026-04-03/breaking_3.png",
+        "url": "breaking/2026-04-03/3.html"
+      }
+    ]
   }
 }
