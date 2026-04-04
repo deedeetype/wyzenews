@@ -412,5 +412,28 @@
         "url": "breaking/2026-04-03/3.html"
       }
     ]
+  },
+  "2026-04-04": {
+    "date": "April 04, 2026",
+    "stories": [
+      {
+        "headline": "Iran Claims to Shoot Down Two U.S. Jets Amid Escalating Conflict",
+        "summary": "Iran says it downed two U.S. jets as fighting intensifies. Trump says the war is “wrapping up” while 40+ nations move to secure the Strait of Hormuz....",
+        "image": "breaking/2026-04-04/breaking_1.png",
+        "url": "breaking/2026-04-04/1.html"
+      },
+      {
+        "headline": "Supreme Court Justice Alito Hospitalized, Sparking Appointment Speculation",
+        "summary": "Justice Samuel Alito was briefly hospitalized for dehydration after a dinner, but the episode quickly fueled speculation about a possible Supreme Cour...",
+        "image": "breaking/2026-04-04/breaking_2.png",
+        "url": "breaking/2026-04-04/2.html"
+      },
+      {
+        "headline": "Russia Launches Massive Daytime Attacks on Ukrainian Cities",
+        "summary": "Russia launched major daytime drone and missile strikes on Kyiv and Zhytomyr, signaling a tactical shift as Moscow intensifies attacks on Ukrainian ci...",
+        "image": "breaking/2026-04-04/breaking_3.png",
+        "url": "breaking/2026-04-04/3.html"
+      }
+    ]
   }
 }
