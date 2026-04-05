@@ -435,5 +435,28 @@
         "url": "breaking/2026-04-04/3.html"
       }
     ]
+  },
+  "2026-04-05": {
+    "date": "April 05, 2026",
+    "stories": [
+      {
+        "headline": "Apple WWDC 2026 Leaks Reveal 5 Major Product Launches",
+        "summary": "WWDC 2026 leaks point to five major Apple reveals, including new Apple TV, Mac mini M5, Mac Studio M5 Ultra, and AI-focused iOS and macOS updates....",
+        "image": "breaking/2026-04-05/breaking_1.png",
+        "url": "breaking/2026-04-05/1.html"
+      },
+      {
+        "headline": "US Rescues Missing Airman After Iran F-15E Shootdown",
+        "summary": "Trump says a missing US airman was rescued after an F-15E was shot down in Iran. The high-risk extraction reportedly involved heavy fighting and aircr...",
+        "image": "breaking/2026-04-05/breaking_2.png",
+        "url": "breaking/2026-04-05/2.html"
+      },
+      {
+        "headline": "Oil Prices Surge to $116 Amid Middle East Conflict Escalation",
+        "summary": "Brent crude surged to $116 as Middle East fighting intensified. Saudi officials warned oil could hit $180, while European gas jumped 30%, fueling fres...",
+        "image": "breaking/2026-04-05/breaking_3.png",
+        "url": "breaking/2026-04-05/3.html"
+      }
+    ]
   }
 }
