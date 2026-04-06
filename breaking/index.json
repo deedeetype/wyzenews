@@ -458,5 +458,28 @@
         "url": "breaking/2026-04-05/3.html"
       }
     ]
+  },
+  "2026-04-06": {
+    "date": "April 06, 2026",
+    "stories": [
+      {
+        "headline": "Super Mario Galaxy Movie Smashes Box Office with $372.5M Global Earnings",
+        "summary": "The Super Mario Galaxy Movie has grossed $372.5M worldwide shortly after release, signaling strong demand for animated franchise films as the global b...",
+        "image": "breaking/2026-04-06/breaking_1.png",
+        "url": "breaking/2026-04-06/1.html"
+      },
+      {
+        "headline": "Montreal Canadiens Clinch 2026 Stanley Cup Playoffs Berth",
+        "summary": "The Canadiens have clinched a 2026 playoff berth after Detroit’s loss to Minnesota. Montreal, on an eight-game win streak, now eyes home-ice advantage...",
+        "image": "breaking/2026-04-06/breaking_2.png",
+        "url": "breaking/2026-04-06/2.html"
+      },
+      {
+        "headline": "Italy's National Football Coach Dismissed After World Cup Qualification Failure",
+        "summary": "Italy sacked its national team coach after failing to qualify for the World Cup, triggering outrage and a reckoning over leadership, player developmen...",
+        "image": "breaking/2026-04-06/breaking_3.png",
+        "url": "breaking/2026-04-06/3.html"
+      }
+    ]
   }
 }
