@@ -481,5 +481,28 @@
         "url": "breaking/2026-04-06/3.html"
       }
     ]
+  },
+  "2026-04-07": {
+    "date": "April 07, 2026",
+    "stories": [
+      {
+        "headline": "Massive Anti-Trump Protests Sweep All 50 States",
+        "summary": "More than 1 million people joined “Hands Off!” protests in all 50 states and abroad, in the biggest anti-Trump demonstrations since his return to offi...",
+        "image": "breaking/2026-04-07/breaking_1.png",
+        "url": "breaking/2026-04-07/1.html"
+      },
+      {
+        "headline": "Global Markets Plunge as U.S.-China Tariff War Escalates to 50%",
+        "summary": "Global markets tumbled after Trump imposed 50% tariffs on Chinese goods and threatened 104%. China vowed to retaliate dollar-for-dollar, deepening tra...",
+        "image": "breaking/2026-04-07/breaking_2.png",
+        "url": "breaking/2026-04-07/2.html"
+      },
+      {
+        "headline": "Myanmar Earthquake Death Toll Surpasses 3,500 as Recovery Efforts Continue",
+        "summary": "Myanmar’s earthquake death toll has topped 3,500, with 5,000+ injured. Heavy rain, fires in Mandalay and turmoil around aid efforts are worsening an a...",
+        "image": "breaking/2026-04-07/breaking_3.png",
+        "url": "breaking/2026-04-07/3.html"
+      }
+    ]
   }
 }
