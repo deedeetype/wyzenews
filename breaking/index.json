@@ -504,5 +504,28 @@
         "url": "breaking/2026-04-07/3.html"
       }
     ]
+  },
+  "2026-04-08": {
+    "date": "April 08, 2026",
+    "stories": [
+      {
+        "headline": "U.S.-Iran Ceasefire Agreement Reopens Strait of Hormuz",
+        "summary": "The U.S. and Iran agreed to a two-week ceasefire and reopened the Strait of Hormuz, easing fears over oil supplies, though officials warn the truce re...",
+        "image": "breaking/2026-04-08/breaking_1.png",
+        "url": "breaking/2026-04-08/1.html"
+      },
+      {
+        "headline": "Global Markets Surge as Oil Prices Plunge on Ceasefire News",
+        "summary": "Global stocks jumped after U.S.-Iran ceasefire news, while oil tumbled below $100. Investors cheered easing geopolitical risk and lower energy cost pr...",
+        "image": "breaking/2026-04-08/breaking_2.png",
+        "url": "breaking/2026-04-08/2.html"
+      },
+      {
+        "headline": "Euphoria Premiere: Sydney Sweeney and Zendaya Share 'Sexiest Celeb' Title",
+        "summary": "At the Euphoria premiere, Sydney Sweeney and Zendaya tied for 'sexiest celeb' as the red carpet drew major buzz with Hunter Schafer, Sam Levinson, and...",
+        "image": "breaking/2026-04-08/breaking_3.png",
+        "url": "breaking/2026-04-08/3.html"
+      }
+    ]
   }
 }
