@@ -527,5 +527,28 @@
         "url": "breaking/2026-04-08/3.html"
       }
     ]
+  },
+  "2026-04-09": {
+    "date": "April 09, 2026",
+    "stories": [
+      {
+        "headline": "US-Iran Ceasefire Hangs by a Thread as Lebanon Death Toll Hits 200",
+        "summary": "Lebanon saw its deadliest day of the war as over 200 were killed in Israeli strikes, while Hezbollah retaliated and the US-Iran ceasefire showed signs...",
+        "image": "breaking/2026-04-09/breaking_1.png",
+        "url": "breaking/2026-04-09/1.html"
+      },
+      {
+        "headline": "Apple's First Foldable iPhone Confirmed for September Launch",
+        "summary": "Bloomberg says Apple’s first foldable iPhone is still set for September 2026, despite delay rumors, signaling Apple’s long-awaited entry into foldable...",
+        "image": "breaking/2026-04-09/breaking_2.png",
+        "url": "breaking/2026-04-09/2.html"
+      },
+      {
+        "headline": "Anthropic Releases Mythos AI Model for Cybersecurity Defense",
+        "summary": "Anthropic unveiled Mythos, an AI model built for cyber defense, with early access for big tech firms. The launch lands as AI legal scrutiny and market...",
+        "image": "breaking/2026-04-09/breaking_3.png",
+        "url": "breaking/2026-04-09/3.html"
+      }
+    ]
   }
 }
