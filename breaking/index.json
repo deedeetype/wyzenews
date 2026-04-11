@@ -573,5 +573,28 @@
         "url": "breaking/2026-04-10/3.html"
       }
     ]
+  },
+  "2026-04-11": {
+    "date": "April 11, 2026",
+    "stories": [
+      {
+        "headline": "Iran-U.S. Ceasefire Talks in Islamabad as Trump Threatens NATO Allies",
+        "summary": "Iran and the U.S. are holding ceasefire talks in Islamabad as Trump pressures NATO allies. Tehran wants frozen assets released and a Lebanon truce....",
+        "image": "breaking/2026-04-11/breaking_1.png",
+        "url": "breaking/2026-04-11/1.html"
+      },
+      {
+        "headline": "NASA's Artemis II Crew Returns Safely After Historic 10-Day Lunar Mission",
+        "summary": "NASA’s Artemis II crew splashed down safely on April 10 after a 10-day lunar mission, marking the first crewed return to the Moon’s vicinity in over 5...",
+        "image": "breaking/2026-04-11/breaking_2.png",
+        "url": "breaking/2026-04-11/2.html"
+      },
+      {
+        "headline": "California Rep. Eric Swalwell's Campaign Collapses Amid Sexual Assault Allegations",
+        "summary": "Rep. Eric Swalwell’s campaign is unraveling after a former staffer accused him of sexual assault, triggering resignations and new pressure to quit the...",
+        "image": "breaking/2026-04-11/breaking_3.png",
+        "url": "breaking/2026-04-11/3.html"
+      }
+    ]
   }
 }
