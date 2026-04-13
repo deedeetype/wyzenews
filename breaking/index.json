@@ -619,5 +619,28 @@
         "url": "breaking/2026-04-12/3.html"
       }
     ]
+  },
+  "2026-04-13": {
+    "date": "April 13, 2026",
+    "stories": [
+      {
+        "headline": "U.S. Enforces Naval Blockade of Iran as Oil Prices Surge Past $100",
+        "summary": "Trump ordered a naval blockade of Iran, sharply escalating regional tensions. Oil jumped above $100, markets fell, and Asian fuel shortages are beginn...",
+        "image": "breaking/2026-04-13/breaking_1.png",
+        "url": "breaking/2026-04-13/1.html"
+      },
+      {
+        "headline": "AMD to Acquire Intel in Historic Chip Industry Reversal",
+        "summary": "AMD plans to buy Intel in a stunning chip-industry reversal, sending Intel shares above $62. Nvidia’s $2B Nebius deal adds to signs of AI-driven conso...",
+        "image": "breaking/2026-04-13/breaking_2.png",
+        "url": "breaking/2026-04-13/2.html"
+      },
+      {
+        "headline": "Hungary's Viktor Orbán Loses Reelection After 14 Years in Power",
+        "summary": "Hungary’s Viktor Orbán has lost reelection after 14 years in power, signaling a major political shift that could reset Budapest’s tense relationship w...",
+        "image": "breaking/2026-04-13/breaking_3.png",
+        "url": "breaking/2026-04-13/3.html"
+      }
+    ]
   }
 }
