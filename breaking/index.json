@@ -642,5 +642,28 @@
         "url": "breaking/2026-04-13/3.html"
       }
     ]
+  },
+  "2026-04-14": {
+    "date": "April 14, 2026",
+    "stories": [
+      {
+        "headline": "United Airlines CEO Proposes Historic Merger with American Airlines",
+        "summary": "Bloomberg reports United CEO Scott Kirby pitched a merger with American Airlines to U.S. officials, a move that could reshape aviation if regulators a...",
+        "image": "breaking/2026-04-14/breaking_1.png",
+        "url": "breaking/2026-04-14/1.html"
+      },
+      {
+        "headline": "Rory McIlroy Wins Second Consecutive Masters Tournament",
+        "summary": "Rory McIlroy won the Masters on April 13 for a second straight year, claiming another green jacket and strengthening his legacy as one of golf’s defin...",
+        "image": "breaking/2026-04-14/breaking_2.png",
+        "url": "breaking/2026-04-14/2.html"
+      },
+      {
+        "headline": "Canadian Liberals Secure House Majority Through By-Election Victories",
+        "summary": "Mark Carney’s Liberals won three April 13 by-elections, securing a House majority and ending months of minority rule in Ottawa....",
+        "image": "breaking/2026-04-14/breaking_3.png",
+        "url": "breaking/2026-04-14/3.html"
+      }
+    ]
   }
 }
