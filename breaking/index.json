@@ -665,5 +665,28 @@
         "url": "breaking/2026-04-14/3.html"
       }
     ]
+  },
+  "2026-04-15": {
+    "date": "April 15, 2026",
+    "stories": [
+      {
+        "headline": "Trump Expresses Optimism Iran War 'Close to Over' Amid Ceasefire",
+        "summary": "Trump says the Iran war may be nearing an end as a ceasefire holds. Oil markets remain on edge, but safe tanker passage through Hormuz suggests tensio...",
+        "image": "breaking/2026-04-15/breaking_1.png",
+        "url": "breaking/2026-04-15/1.html"
+      },
+      {
+        "headline": "Turkey Faces Wave of School Shootings: 4 Dead, 16 Wounded",
+        "summary": "Two school shootings in Turkey in two days left 4 dead and 16 wounded, intensifying alarm over gun access, school safety, and youth mental health....",
+        "image": "breaking/2026-04-15/breaking_2.png",
+        "url": "breaking/2026-04-15/2.html"
+      },
+      {
+        "headline": "Two U.S. Representatives Resign Amid Sexual Abuse Allegations",
+        "summary": "Reps. Eric Swalwell and Tony Gonzales resigned amid sexual abuse allegations, deepening Congress’s misconduct reckoning and raising pressure for broad...",
+        "image": "breaking/2026-04-15/breaking_3.png",
+        "url": "breaking/2026-04-15/3.html"
+      }
+    ]
   }
 }
