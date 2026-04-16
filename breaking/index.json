@@ -688,5 +688,28 @@
         "url": "breaking/2026-04-15/3.html"
       }
     ]
+  },
+  "2026-04-16": {
+    "date": "April 16, 2026",
+    "stories": [
+      {
+        "headline": "US-Iran Ceasefire Extension: Trump Says War 'Very Close to Over'",
+        "summary": "Trump says the US-Iran war is \"very close to over\" as both sides consider a two-week ceasefire extension before April 22 amid market relief and fragil...",
+        "image": "breaking/2026-04-16/breaking_1.png",
+        "url": "breaking/2026-04-16/1.html"
+      },
+      {
+        "headline": "S&P 500 Hits Record High as Markets Rally on Iran Ceasefire Hope",
+        "summary": "The S&P 500 closed at a record high as hopes for an Iran-US ceasefire extension eased risk fears, while strong tech momentum and steadier China data l...",
+        "image": "breaking/2026-04-16/breaking_2.png",
+        "url": "breaking/2026-04-16/2.html"
+      },
+      {
+        "headline": "Tech Stocks Surge on TSMC Positive Outlook Amid Global Tensions",
+        "summary": "Tech stocks jumped after TSMC gave an upbeat outlook, signaling strong chip demand even as Iran-US tensions rattled global markets....",
+        "image": "breaking/2026-04-16/breaking_3.png",
+        "url": "breaking/2026-04-16/3.html"
+      }
+    ]
   }
 }
