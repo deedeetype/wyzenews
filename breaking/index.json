@@ -711,5 +711,28 @@
         "url": "breaking/2026-04-16/3.html"
       }
     ]
+  },
+  "2026-04-19": {
+    "date": "April 19, 2026",
+    "stories": [
+      {
+        "headline": "Anthropic Rejects $800B+ Valuation as AI Boom Transforms Wall Street",
+        "summary": "Anthropic rejected offers topping $800B as AI mania accelerates. NVIDIA sees up to $4T in AI buildout, while chip deals and rising AI adoption fuel Wa...",
+        "image": "breaking/2026-04-19/breaking_1.png",
+        "url": "breaking/2026-04-19/1.html"
+      },
+      {
+        "headline": "EPA Mercury Standards Rollback Triggers Lawsuit as US Heat Wave Breaks Records",
+        "summary": "Green groups sued after the EPA rolled back mercury limits on coal plants, while a record US heat wave pushes east, raising health, farm and grid risk...",
+        "image": "breaking/2026-04-19/breaking_2.png",
+        "url": "breaking/2026-04-19/2.html"
+      },
+      {
+        "headline": "Michael Jackson Returns to Cinema: Biopic 'Michael' Premieres April 24",
+        "summary": "Michael Jackson biopic “Michael,” starring nephew Jaafar Jackson, premieres April 24, kicking off a crowded 2026 entertainment slate....",
+        "image": "breaking/2026-04-19/breaking_3.png",
+        "url": "breaking/2026-04-19/3.html"
+      }
+    ]
   }
 }
