@@ -734,5 +734,28 @@
         "url": "breaking/2026-04-19/3.html"
       }
     ]
+  },
+  "2026-04-20": {
+    "date": "April 20, 2026",
+    "stories": [
+      {
+        "headline": "US-Iran Strait of Hormuz Crisis Escalates",
+        "summary": "A US-Iran clash in the Strait of Hormuz has jolted oil markets after a US seizure of an Iranian cargo ship and Tehran’s retaliatory closure of the wat...",
+        "image": "breaking/2026-04-20/breaking_1.png",
+        "url": "breaking/2026-04-20/1.html"
+      },
+      {
+        "headline": "Mass Shooting in Louisiana Kills Eight Children",
+        "summary": "A mass shooting in Louisiana killed eight children, reigniting U.S. debate over gun violence, school safety and political responses ahead of the 2026 ...",
+        "image": "breaking/2026-04-20/breaking_2.png",
+        "url": "breaking/2026-04-20/2.html"
+      },
+      {
+        "headline": "Russia Launches 236 Drones at Ukraine",
+        "summary": "Russia launched 236 drones at Ukraine in a major overnight assault. In Chernihiv, at least one boy was killed and four people were injured, underscori...",
+        "image": "breaking/2026-04-20/breaking_3.png",
+        "url": "breaking/2026-04-20/3.html"
+      }
+    ]
   }
 }
