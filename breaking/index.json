@@ -941,5 +941,28 @@
         "url": "breaking/2026-04-29/3.html"
       }
     ]
+  },
+  "2026-05-01": {
+    "date": "May 01, 2026",
+    "stories": [
+      {
+        "headline": "Iran Threatens Retaliation as U.S. Mulls Military Action Over Strait of Hormuz",
+        "summary": "Iran warned of “painful retaliation” if the U.S. strikes over the Strait of Hormuz, as Trump weighs options and oil jumps to a 4-year high amid fears ...",
+        "image": "breaking/2026-05-01/breaking_1.png",
+        "url": "breaking/2026-05-01/1.html"
+      },
+      {
+        "headline": "Global Memory Chip Shortage Reverses Decades of Declining Computer Hardware Prices",
+        "summary": "A global memory chip shortage is raising prices for laptops, servers, and other devices, ending years of cheaper hardware and pressuring consumers and...",
+        "image": "breaking/2026-05-01/breaking_2.png",
+        "url": "breaking/2026-05-01/2.html"
+      },
+      {
+        "headline": "Hundreds of Foreign Doctors Face Deportation Amid Visa Processing Crisis",
+        "summary": "Hundreds of foreign doctors in U.S. training programs could be forced to leave unless visa waivers are processed fast, risking deeper staffing shortag...",
+        "image": "breaking/2026-05-01/breaking_3.png",
+        "url": "breaking/2026-05-01/3.html"
+      }
+    ]
   }
 }
