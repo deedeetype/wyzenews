@@ -762,22 +762,183 @@
     "date": "April 30, 2026",
     "stories": [
       {
-        "headline": "CENTCOM Briefs Trump on Iran Military Strike Options as Oil Hits $126",
-        "summary": "CENTCOM has briefed Trump on new strike options against Iran as a Strait of Hormuz blockade pushes Brent crude to $126, raising fears of a wider confl...",
+        "headline": "Indonesia Train Crash Kills 15, Injures 88 Near Jakarta",
+        "summary": "A train crash near Jakarta killed 15 and injured 88 when a long-distance train hit a stopped commuter service at Bekasi Timur Station....",
         "image": "breaking/2026-04-30/breaking_1.png",
         "url": "breaking/2026-04-30/1.html"
       },
       {
-        "headline": "Spirit Airlines Cash Crisis: Only Days of Operations Left",
-        "summary": "Spirit Airlines is reportedly down to days of cash, while government rescue talks have stalled. A collapse could disrupt routes, threaten jobs, and sh...",
+        "headline": "Colombia Highway Explosives Attack Kills 19, Dozens Injured",
+        "summary": "An explosives attack on a Colombian highway killed 19 people and wounded dozens, marking a major strike on civilian infrastructure and raising fresh s...",
         "image": "breaking/2026-04-30/breaking_2.png",
         "url": "breaking/2026-04-30/2.html"
       },
       {
-        "headline": "Hidden Ocean Heat Threatens Antarctica Ice Shelves",
-        "summary": "Scientists found hidden warm ocean water moving toward Antarctica’s ice shelves, increasing melt risks and raising new concerns about faster sea level...",
+        "headline": "UAE Exits OPEC Effective May, Oil Markets React",
+        "summary": "The UAE says it will leave OPEC in May 2026, jolting oil markets and raising questions about cartel cohesion, future output policy, and global energy ...",
         "image": "breaking/2026-04-30/breaking_3.png",
         "url": "breaking/2026-04-30/3.html"
+      }
+    ]
+  },
+  "2026-04-22": {
+    "date": "April 30, 2026",
+    "stories": [
+      {
+        "headline": "Trump Indefinitely Extends Iran Ceasefire",
+        "summary": "Trump said the Iran ceasefire will continue indefinitely, reversing his earlier stance as Pakistan pushes talks and the US keeps its Strait of Hormuz ...",
+        "image": "breaking/2026-04-22/breaking_1.png",
+        "url": "breaking/2026-04-22/1.html"
+      },
+      {
+        "headline": "Multiple Aircraft Near-Misses at Major US Airports",
+        "summary": "An American Airlines jet came within 350 feet of an Air Canada plane near JFK, the second major US airport near-miss this week, intensifying scrutiny ...",
+        "image": "breaking/2026-04-22/breaking_2.png",
+        "url": "breaking/2026-04-22/2.html"
+      },
+      {
+        "headline": "Record Midwest Flooding Followed by Damaging Ice Dams",
+        "summary": "Record Midwest flooding has shifted into a new threat as ice dams block rivers and worsen damage across several states, prolonging travel, property, a...",
+        "image": "breaking/2026-04-22/breaking_3.png",
+        "url": "breaking/2026-04-22/3.html"
+      }
+    ]
+  },
+  "2026-04-23": {
+    "date": "April 30, 2026",
+    "stories": [
+      {
+        "headline": "French Soldier Killed in Lebanon Hezbollah Ambush",
+        "summary": "A French UNIFIL soldier died after a Hezbollah-attributed ambush in south Lebanon. The killing marks France’s second peacekeeper death there and raise...",
+        "image": "breaking/2026-04-23/breaking_1.png",
+        "url": "breaking/2026-04-23/1.html"
+      },
+      {
+        "headline": "Iran Seizes Ships in Strait of Hormuz Amid Energy Crisis Warnings",
+        "summary": "Iran seized two commercial ships in the Strait of Hormuz, raising fears of supply disruption as EU officials warn a wider US-Israel-Iran clash could t...",
+        "image": "breaking/2026-04-23/breaking_2.png",
+        "url": "breaking/2026-04-23/2.html"
+      },
+      {
+        "headline": "Former Finnish PM Urges EU Nuclear Deterrence Without Ukraine",
+        "summary": "Former Finnish PM Sanna Marin says the EU must build stronger military and nuclear deterrence, warning Europe is more exposed if Ukraine no longer act...",
+        "image": "breaking/2026-04-23/breaking_3.png",
+        "url": "breaking/2026-04-23/3.html"
+      }
+    ]
+  },
+  "2026-04-25": {
+    "date": "April 30, 2026",
+    "stories": [
+      {
+        "headline": "India Suspends Indus Water Treaty After Kashmir Terror Attack Kills 26",
+        "summary": "India suspended the Indus Waters Treaty after a Kashmir attack killed 26, while also shutting the Attari-Wagah border and expelling Pakistani national...",
+        "image": "breaking/2026-04-25/breaking_1.png",
+        "url": "breaking/2026-04-25/1.html"
+      },
+      {
+        "headline": "Trump Orders US Forces to Shoot Iranian Boats Laying Mines in Strait of Hormuz",
+        "summary": "Trump said US forces should “shoot and kill” Iranian boats laying mines in the Strait of Hormuz, escalating Gulf tensions as US also seized a tanker t...",
+        "image": "breaking/2026-04-25/breaking_2.png",
+        "url": "breaking/2026-04-25/2.html"
+      },
+      {
+        "headline": "Over Dozen Tornadoes Hit US Plains, Wildfires Destroy 90 Homes in Georgia",
+        "summary": "More than a dozen tornadoes hit the Plains, including an Oklahoma tornado emergency, while drought-fed wildfires in Georgia destroyed nearly 90 homes ...",
+        "image": "breaking/2026-04-25/breaking_3.png",
+        "url": "breaking/2026-04-25/3.html"
+      }
+    ]
+  },
+  "2026-04-26": {
+    "date": "April 30, 2026",
+    "stories": [
+      {
+        "headline": "Gunman Fires Shots at White House Correspondents' Dinner, Trump Evacuated",
+        "summary": "Shots near the White House Correspondents' Dinner prompted Trump's evacuation as agents secured 2,600 guests. One Secret Service agent was wounded; th...",
+        "image": "breaking/2026-04-26/breaking_1.png",
+        "url": "breaking/2026-04-26/1.html"
+      },
+      {
+        "headline": "Ukraine Cash-Strapped as International Aid Falters Amid Russia War",
+        "summary": "Ukraine faces a mounting cash crunch as foreign aid slows, straining its war budget and risking military operations while Russia presses attacks....",
+        "image": "breaking/2026-04-26/breaking_2.png",
+        "url": "breaking/2026-04-26/2.html"
+      },
+      {
+        "headline": "FIFA Confirms Iran Will Participate in 2026 World Cup Despite US Conflict",
+        "summary": "FIFA says Iran will compete in the 2026 World Cup in the US despite regional conflict, with Gianni Infantino insisting the tournament will keep sport ...",
+        "image": "breaking/2026-04-26/breaking_3.png",
+        "url": "breaking/2026-04-26/3.html"
+      }
+    ]
+  },
+  "2026-04-27": {
+    "date": "April 30, 2026",
+    "stories": [
+      {
+        "headline": "White House Correspondents' Dinner Shooting Investigation Continues",
+        "summary": "Authorities are still investigating the April 25 White House Correspondents' Dinner shooting. Suspect Cole Thomas Allen faces federal charges after al...",
+        "image": "breaking/2026-04-27/breaking_1.png",
+        "url": "breaking/2026-04-27/1.html"
+      },
+      {
+        "headline": "Ukraine Marks 40th Anniversary of Chernobyl Disaster Amid Russian Strikes",
+        "summary": "Ukraine marked 40 years since Chernobyl as Zelenskyy accused Russia of \"nuclear terrorism\" after strikes damaged the containment site....",
+        "image": "breaking/2026-04-27/breaking_2.png",
+        "url": "breaking/2026-04-27/2.html"
+      },
+      {
+        "headline": "Hezbollah Drone Strike Kills IDF Soldier Despite Lebanon Ceasefire",
+        "summary": "A Hezbollah drone strike killed an IDF soldier and wounded six in southern Lebanon, testing a fragile ceasefire and prompting Israeli retaliatory stri...",
+        "image": "breaking/2026-04-27/breaking_3.png",
+        "url": "breaking/2026-04-27/3.html"
+      }
+    ]
+  },
+  "2026-04-28": {
+    "date": "April 30, 2026",
+    "stories": [
+      {
+        "headline": "Cole Allen Charged with Attempted Assassination of President Trump",
+        "summary": "Cole Tomas Allen, 31, is charged with attempting to assassinate President Trump after the April 25 White House Correspondents Dinner shooting. A feder...",
+        "image": "breaking/2026-04-28/breaking_1.png",
+        "url": "breaking/2026-04-28/1.html"
+      },
+      {
+        "headline": "Historic Georgia Wildfires Destroy 120+ Homes, 50+ Tornadoes Hit Central US",
+        "summary": "Georgia’s worst wildfires on record have burned 50,000+ acres and destroyed 120+ homes, as 50+ tornadoes strike the central U.S., killing at least 2 i...",
+        "image": "breaking/2026-04-28/breaking_2.png",
+        "url": "breaking/2026-04-28/2.html"
+      },
+      {
+        "headline": "Trump Rejects Iran Proposal, Oil Hits $108-111 Per Barrel Amid Hormuz Crisis",
+        "summary": "Trump rejected Iran’s offer to reopen Hormuz, escalating a key oil-route crisis. Crude jumped to $108-$111 a barrel, pushing U.S. gasoline above $4.11...",
+        "image": "breaking/2026-04-28/breaking_3.png",
+        "url": "breaking/2026-04-28/3.html"
+      }
+    ]
+  },
+  "2026-04-29": {
+    "date": "April 30, 2026",
+    "stories": [
+      {
+        "headline": "Indonesia Train Crash Kills 15, Injures 88 Near Jakarta",
+        "summary": "A train crash near Jakarta killed 15 and injured 88 when a long-distance train hit a stopped commuter service at Bekasi Timur Station....",
+        "image": "breaking/2026-04-29/breaking_1.png",
+        "url": "breaking/2026-04-29/1.html"
+      },
+      {
+        "headline": "Colombia Highway Explosives Attack Kills 19, Dozens Injured",
+        "summary": "An explosives attack on a Colombian highway killed 19 people and wounded dozens, marking a major strike on civilian infrastructure and raising fresh s...",
+        "image": "breaking/2026-04-29/breaking_2.png",
+        "url": "breaking/2026-04-29/2.html"
+      },
+      {
+        "headline": "UAE Exits OPEC Effective May, Oil Markets React",
+        "summary": "The UAE says it will leave OPEC in May 2026, jolting oil markets and raising questions about cartel cohesion, future output policy, and global energy ...",
+        "image": "breaking/2026-04-29/breaking_3.png",
+        "url": "breaking/2026-04-29/3.html"
       }
     ]
   }
