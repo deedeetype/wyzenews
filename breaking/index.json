@@ -757,5 +757,28 @@
         "url": "breaking/2026-04-20/3.html"
       }
     ]
+  },
+  "2026-04-30": {
+    "date": "April 30, 2026",
+    "stories": [
+      {
+        "headline": "CENTCOM Briefs Trump on Iran Military Strike Options as Oil Hits $126",
+        "summary": "CENTCOM has briefed Trump on new strike options against Iran as a Strait of Hormuz blockade pushes Brent crude to $126, raising fears of a wider confl...",
+        "image": "breaking/2026-04-30/breaking_1.png",
+        "url": "breaking/2026-04-30/1.html"
+      },
+      {
+        "headline": "Spirit Airlines Cash Crisis: Only Days of Operations Left",
+        "summary": "Spirit Airlines is reportedly down to days of cash, while government rescue talks have stalled. A collapse could disrupt routes, threaten jobs, and sh...",
+        "image": "breaking/2026-04-30/breaking_2.png",
+        "url": "breaking/2026-04-30/2.html"
+      },
+      {
+        "headline": "Hidden Ocean Heat Threatens Antarctica Ice Shelves",
+        "summary": "Scientists found hidden warm ocean water moving toward Antarctica’s ice shelves, increasing melt risks and raising new concerns about faster sea level...",
+        "image": "breaking/2026-04-30/breaking_3.png",
+        "url": "breaking/2026-04-30/3.html"
+      }
+    ]
   }
 }
