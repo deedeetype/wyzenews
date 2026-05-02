@@ -964,5 +964,28 @@
         "url": "breaking/2026-05-01/3.html"
       }
     ]
+  },
+  "2026-05-02": {
+    "date": "May 02, 2026",
+    "stories": [
+      {
+        "headline": "Federal Appeals Court Blocks Nationwide Mailing of Abortion Pill Mifepristone",
+        "summary": "A federal appeals court moved to block mailing of mifepristone nationwide, threatening telehealth abortion access and setting up another major legal f...",
+        "image": "breaking/2026-05-02/breaking_1.png",
+        "url": "breaking/2026-05-02/1.html"
+      },
+      {
+        "headline": "Spirit Airlines Ceases Operations After Failed $500M Government Bailout",
+        "summary": "Spirit Airlines is ceasing operations after a failed $500M bailout push, disrupting U.S. air travel, stranding passengers, and threatening thousands o...",
+        "image": "breaking/2026-05-02/breaking_2.png",
+        "url": "breaking/2026-05-02/2.html"
+      },
+      {
+        "headline": "Scientists Discover Ancient Antarctic Ice Reveals 3-Million-Year Climate Mystery",
+        "summary": "Ancient Antarctic ice shows Earth cooled sharply 3 million years ago while CO2 and methane shifted only slightly, raising new questions about how past...",
+        "image": "breaking/2026-05-02/breaking_3.png",
+        "url": "breaking/2026-05-02/3.html"
+      }
+    ]
   }
 }
