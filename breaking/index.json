@@ -1010,5 +1010,28 @@
         "url": "breaking/2026-05-04/3.html"
       }
     ]
+  },
+  "2026-05-05": {
+    "date": "May 05, 2026",
+    "stories": [
+      {
+        "headline": "Iran-US Tensions Escalate in Strait of Hormuz",
+        "summary": "Iran fired missiles and drones at UAE and U.S. warships in the Gulf, prompting U.S. “Project Freedom” operations and jolting oil markets over Strait o...",
+        "image": "breaking/2026-05-05/breaking_1.png",
+        "url": "breaking/2026-05-05/1.html"
+      },
+      {
+        "headline": "Suspected Hanta Virus Outbreak on Atlantic Cruise Ship",
+        "summary": "A health alert was issued for an Atlantic cruise after several deaths and illnesses were tied to a suspected Hanta virus outbreak. Passengers and crew...",
+        "image": "breaking/2026-05-05/breaking_2.png",
+        "url": "breaking/2026-05-05/2.html"
+      },
+      {
+        "headline": "Canada Pledges $270M Military Aid to Ukraine",
+        "summary": "Canada pledged $270 million in military aid to Ukraine, reinforcing support as debate grows over whether Western allies will stay aligned amid Trump-e...",
+        "image": "breaking/2026-05-05/breaking_3.png",
+        "url": "breaking/2026-05-05/3.html"
+      }
+    ]
   }
 }
