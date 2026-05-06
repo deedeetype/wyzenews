@@ -1033,5 +1033,28 @@
         "url": "breaking/2026-05-05/3.html"
       }
     ]
+  },
+  "2026-05-06": {
+    "date": "May 06, 2026",
+    "stories": [
+      {
+        "headline": "Montreal Canadiens Rookie Goalie Jakub Dobes Makes History in Game 7 Win",
+        "summary": "Rookie Jakub Dobes led Montreal past Tampa Bay 2-1 in Game 7, becoming the fifth rookie goalie in Canadiens history to win a winner-take-all playoff g...",
+        "image": "breaking/2026-05-06/breaking_1.png",
+        "url": "breaking/2026-05-06/1.html"
+      },
+      {
+        "headline": "Friedrich Merz Elected as Germany's New Chancellor",
+        "summary": "Friedrich Merz was elected Germany’s 10th chancellor with 325 Bundestag votes, ushering in a major leadership change for Europe’s biggest economy....",
+        "image": "breaking/2026-05-06/breaking_2.png",
+        "url": "breaking/2026-05-06/2.html"
+      },
+      {
+        "headline": "Cameron Diaz and Benji Madden Welcome Third Child Named Nautus",
+        "summary": "Cameron Diaz and Benji Madden announced the birth of their third child, Nautus, on Instagram, adding personal family news to a celebrity-filled week i...",
+        "image": "breaking/2026-05-06/breaking_3.png",
+        "url": "breaking/2026-05-06/3.html"
+      }
+    ]
   }
 }
