@@ -1056,5 +1056,28 @@
         "url": "breaking/2026-05-06/3.html"
       }
     ]
+  },
+  "2026-05-07": {
+    "date": "May 07, 2026",
+    "stories": [
+      {
+        "headline": "Trump Pauses Maritime Mission in Strait of Hormuz Seeking Iran Deal",
+        "summary": "Trump has paused the U.S. Strait of Hormuz escort mission to test diplomacy with Iran, raising fresh questions about tanker security and global oil su...",
+        "image": "breaking/2026-05-07/breaking_1.png",
+        "url": "breaking/2026-05-07/1.html"
+      },
+      {
+        "headline": "WHO Responds to Hantavirus Outbreak on Cruise Ship with Human-to-Human Transmission",
+        "summary": "WHO is overseeing a cruise ship hantavirus emergency after suspected onboard human-to-human spread. Spain will dock the vessel in Tenerife for evacuat...",
+        "image": "breaking/2026-05-07/breaking_2.png",
+        "url": "breaking/2026-05-07/2.html"
+      },
+      {
+        "headline": "Buffalo Sabres Defeat Montreal Canadiens 4-2 in Playoff Round 2 Opener",
+        "summary": "Buffalo opened Round 2 with a 4-2 win over Montreal, fueled by Josh Doan and Ryan McLeod. The Sabres’ rest edge showed as the Canadiens faded after a ...",
+        "image": "breaking/2026-05-07/breaking_3.png",
+        "url": "breaking/2026-05-07/3.html"
+      }
+    ]
   }
 }
