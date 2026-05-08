@@ -1079,5 +1079,28 @@
         "url": "breaking/2026-05-07/3.html"
       }
     ]
+  },
+  "2026-05-08": {
+    "date": "May 08, 2026",
+    "stories": [
+      {
+        "headline": "US-Iran Ceasefire Under Strain in Strait of Hormuz",
+        "summary": "A fragile US-Iran ceasefire is wobbling after fresh strikes in the Strait of Hormuz, amid secret talks to reopen shipping and doubts over US deterrenc...",
+        "image": "breaking/2026-05-08/breaking_1.png",
+        "url": "breaking/2026-05-08/1.html"
+      },
+      {
+        "headline": "Major Cyber Attack Hits US Schools and Colleges",
+        "summary": "A major cyberattack has disrupted operations at US schools and colleges, affecting systems and daily functions. Officials are assessing scope, impact,...",
+        "image": "breaking/2026-05-08/breaking_2.png",
+        "url": "breaking/2026-05-08/2.html"
+      },
+      {
+        "headline": "Oil Profits Soar Amid Iran War as Consumers Suffer",
+        "summary": "Oil firms are reaping windfalls as the Iran war pushes fuel prices higher, while households cut back on spending under growing pressure at the pump....",
+        "image": "breaking/2026-05-08/breaking_3.png",
+        "url": "breaking/2026-05-08/3.html"
+      }
+    ]
   }
 }
