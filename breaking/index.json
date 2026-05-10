@@ -1102,5 +1102,28 @@
         "url": "breaking/2026-05-08/3.html"
       }
     ]
+  },
+  "2026-05-09": {
+    "date": "May 09, 2026",
+    "stories": [
+      {
+        "headline": "Trump Announces Surprise Russia-Ukraine Ceasefire & Prisoner Exchange",
+        "summary": "Trump says Russia and Ukraine agreed to a surprise 3-day ceasefire starting Saturday, plus a 1,000-for-1,000 prisoner swap, with Zelenskyy confirming ...",
+        "image": "breaking/2026-05-09/breaking_1.png",
+        "url": "breaking/2026-05-09/1.html"
+      },
+      {
+        "headline": "U.S.-Iran Ceasefire Hanging in the Balance After Tanker Incidents",
+        "summary": "The U.S.-Iran ceasefire is under strain after U.S. forces disabled two Iranian tankers and Iran reportedly attacked U.S. ships. Washington warns of to...",
+        "image": "breaking/2026-05-09/breaking_2.png",
+        "url": "breaking/2026-05-09/2.html"
+      },
+      {
+        "headline": "Mass Exodus at Pentagon as Officials Cite 'Chilling Effect' Under Trump",
+        "summary": "Former Pentagon officials describe a \"chilling effect\" driving staff departures, as tensions grow over Trump-era leadership and reported clashes with ...",
+        "image": "breaking/2026-05-09/breaking_3.png",
+        "url": "breaking/2026-05-09/3.html"
+      }
+    ]
   }
 }
