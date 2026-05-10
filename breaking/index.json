@@ -1125,5 +1125,28 @@
         "url": "breaking/2026-05-09/3.html"
       }
     ]
+  },
+  "2026-05-10": {
+    "date": "May 10, 2026",
+    "stories": [
+      {
+        "headline": "Breakthrough 'Super Steel' Revolutionizes Green Hydrogen Production",
+        "summary": "HKU researchers developed a low-cost “super steel” that survives seawater electrolysis far longer than rivals, potentially making green hydrogen cheap...",
+        "image": "breaking/2026-05-10/breaking_1.png",
+        "url": "breaking/2026-05-10/1.html"
+      },
+      {
+        "headline": "Antarctica's Hidden Ice Channels Accelerate Melting from Below",
+        "summary": "New scans found deep channels beneath Antarctic ice shelves funneling warm water below, driving melt 2-3x faster than expected and raising fears of ea...",
+        "image": "breaking/2026-05-10/breaking_2.png",
+        "url": "breaking/2026-05-10/2.html"
+      },
+      {
+        "headline": "Unhackable Quantum Encryption Keys Transmitted Over 120 Kilometers",
+        "summary": "Researchers sent quantum encryption keys 120 km over fiber using semiconductor quantum dots, marking a major step toward scalable, ultra-secure commun...",
+        "image": "breaking/2026-05-10/breaking_3.png",
+        "url": "breaking/2026-05-10/3.html"
+      }
+    ]
   }
 }
