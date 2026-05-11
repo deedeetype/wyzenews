@@ -1148,5 +1148,28 @@
         "url": "breaking/2026-05-10/3.html"
       }
     ]
+  },
+  "2026-05-11": {
+    "date": "May 11, 2026",
+    "stories": [
+      {
+        "headline": "Montreal Canadiens Crush Buffalo Sabres 6-2, Take 2-1 Series Lead",
+        "summary": "The Canadiens routed the Sabres 6-2 in Game 3 at Bell Centre, scoring four straight goals after an early deficit to seize a 2-1 series lead....",
+        "image": "breaking/2026-05-11/breaking_1.png",
+        "url": "breaking/2026-05-11/1.html"
+      },
+      {
+        "headline": "Alphabet on Brink of Becoming World's Largest Company at $4.8 Trillion",
+        "summary": "Alphabet is nearing Nvidia to become the world’s most valuable company at $4.8T, driven by its rapid rise from AI laggard to leader across chips, clou...",
+        "image": "breaking/2026-05-11/breaking_2.png",
+        "url": "breaking/2026-05-11/2.html"
+      },
+      {
+        "headline": "Tech Sector Reels from Record 92,000 Layoffs in First Five Months of 2026",
+        "summary": "Tech firms cut 92,000 jobs in the first five months of 2026, including 45,000 in April alone, even as the industry pours a record $700 billion into AI...",
+        "image": "breaking/2026-05-11/breaking_3.png",
+        "url": "breaking/2026-05-11/3.html"
+      }
+    ]
   }
 }
