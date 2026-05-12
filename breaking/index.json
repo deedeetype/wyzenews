@@ -1171,5 +1171,28 @@
         "url": "breaking/2026-05-11/3.html"
       }
     ]
+  },
+  "2026-05-12": {
+    "date": "May 12, 2026",
+    "stories": [
+      {
+        "headline": "Trump's High-Stakes China Summit Looms Amid U.S. Weaknesses",
+        "summary": "Trump heads to Beijing for a high-stakes Xi summit as critics warn U.S. military and economic strains have weakened Washington’s leverage with China....",
+        "image": "breaking/2026-05-12/breaking_1.png",
+        "url": "breaking/2026-05-12/1.html"
+      },
+      {
+        "headline": "France Arrests Tunisian Man in Foiled Jihadist Plot Targeting Paris",
+        "summary": "France arrested a 27-year-old Tunisian over an alleged jihadist plot targeting a Paris museum and Jewish people, underscoring persistent terror threat...",
+        "image": "breaking/2026-05-12/breaking_2.png",
+        "url": "breaking/2026-05-12/2.html"
+      },
+      {
+        "headline": "UK Labour Crisis: Starmer Faces Mutiny with Over 70 MPs Calling for Resignation",
+        "summary": "Starmer faces a Labour revolt as 70+ MPs and several ministers urge him to quit, deepening a post-election crisis and raising fresh doubts over UK gov...",
+        "image": "breaking/2026-05-12/breaking_3.png",
+        "url": "breaking/2026-05-12/3.html"
+      }
+    ]
   }
 }
