@@ -1194,5 +1194,28 @@
         "url": "breaking/2026-05-12/3.html"
       }
     ]
+  },
+  "2026-05-13": {
+    "date": "May 13, 2026",
+    "stories": [
+      {
+        "headline": "Trump Arrives in China for High-Stakes Summit Amid Iran War Pressures",
+        "summary": "Trump arrived in Beijing for talks with Xi as trade and AI tensions collide with the Iran war. Markets fell sharply after Trump vowed the U.S. would \"...",
+        "image": "breaking/2026-05-13/breaking_1.png",
+        "url": "breaking/2026-05-13/1.html"
+      },
+      {
+        "headline": "Hantavirus Outbreak Linked to Luxury Cruise Ship Spreads Across 10 States",
+        "summary": "A hantavirus outbreak tied to a luxury cruise ship has reached 11 confirmed cases, with 18 people monitored across 10 states, prompting a multistate p...",
+        "image": "breaking/2026-05-13/breaking_2.png",
+        "url": "breaking/2026-05-13/2.html"
+      },
+      {
+        "headline": "NBA Mourns Brandon Clarke's Death at 29 in Suspected Overdose",
+        "summary": "Reports say Grizzlies forward Brandon Clarke, 29, died in Los Angeles in a suspected overdose. The NBA is mourning as officials await confirmed cause-...",
+        "image": "breaking/2026-05-13/breaking_3.png",
+        "url": "breaking/2026-05-13/3.html"
+      }
+    ]
   }
 }
