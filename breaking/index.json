@@ -1217,5 +1217,28 @@
         "url": "breaking/2026-05-13/3.html"
       }
     ]
+  },
+  "2026-05-14": {
+    "date": "May 14, 2026",
+    "stories": [
+      {
+        "headline": "Trump-Xi Summit in Beijing: Taiwan Tensions Escalate Amid Iran Crisis",
+        "summary": "At a Beijing summit, Xi warned Taiwan could trigger a U.S.-China clash, while both leaders urged keeping the Strait of Hormuz open amid Iran-driven oi...",
+        "image": "breaking/2026-05-14/breaking_1.png",
+        "url": "breaking/2026-05-14/1.html"
+      },
+      {
+        "headline": "Russia Launches Massive Air Attack on Ukraine",
+        "summary": "Russia launched its largest air attack of the war just after a 3-day ceasefire ended, sharply escalating the conflict and raising fears of wider regio...",
+        "image": "breaking/2026-05-14/breaking_2.png",
+        "url": "breaking/2026-05-14/2.html"
+      },
+      {
+        "headline": "NANA Virus: First U.S. Case Recovers",
+        "summary": "The first U.S. NANA virus patient in Nebraska has recovered, tested negative, and left isolation, offering early relief as health officials continue m...",
+        "image": "breaking/2026-05-14/breaking_3.png",
+        "url": "breaking/2026-05-14/3.html"
+      }
+    ]
   }
 }
