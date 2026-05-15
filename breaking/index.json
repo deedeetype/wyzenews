@@ -1240,5 +1240,28 @@
         "url": "breaking/2026-05-14/3.html"
       }
     ]
+  },
+  "2026-05-15": {
+    "date": "May 15, 2026",
+    "stories": [
+      {
+        "headline": "Montreal Canadiens Defeat Buffalo Sabres 6-3, One Win Away from Conference Finals",
+        "summary": "Montreal beat Buffalo 6-3 in Game 5 to take a 3-2 series lead. The Canadiens are now one win from the Eastern Conference Finals, with Game 6 set for S...",
+        "image": "breaking/2026-05-15/breaking_1.png",
+        "url": "breaking/2026-05-15/1.html"
+      },
+      {
+        "headline": "Cisco Cuts Nearly 4,000 Jobs While Ramping Up AI Investment",
+        "summary": "Cisco is cutting nearly 4,000 jobs as it boosts AI spending, underscoring how big tech is shifting budgets and talent toward artificial intelligence....",
+        "image": "breaking/2026-05-15/breaking_2.png",
+        "url": "breaking/2026-05-15/2.html"
+      },
+      {
+        "headline": "NASA Tests Revolutionary AI Space Chip for Autonomous Spacecraft",
+        "summary": "NASA is testing an AI chip that could let spacecraft make real-time decisions without waiting for Earth, a major step toward faster, more autonomous d...",
+        "image": "breaking/2026-05-15/breaking_3.png",
+        "url": "breaking/2026-05-15/3.html"
+      }
+    ]
   }
 }
