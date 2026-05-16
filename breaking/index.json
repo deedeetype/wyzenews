@@ -1263,5 +1263,28 @@
         "url": "breaking/2026-05-15/3.html"
       }
     ]
+  },
+  "2026-05-16": {
+    "date": "May 16, 2026",
+    "stories": [
+      {
+        "headline": "U.S. Cancels Deployment of 4,000 Troops to Poland Amid Growing Diplomatic Rift with Germany",
+        "summary": "The U.S. has scrapped a planned 4,000-troop deployment to Poland, signaling a major shift in Europe strategy and adding strain to already tense ties w...",
+        "image": "breaking/2026-05-16/breaking_1.png",
+        "url": "breaking/2026-05-16/1.html"
+      },
+      {
+        "headline": "China Agrees to Purchase 200 Boeing Jets Following Trump-Xi Beijing Summit",
+        "summary": "China agreed to buy 200 Boeing jets after a Trump-Xi summit in Beijing, handing U.S. aerospace a major boost as both sides try to steady strained trad...",
+        "image": "breaking/2026-05-16/breaking_2.png",
+        "url": "breaking/2026-05-16/2.html"
+      },
+      {
+        "headline": "Montreal Canadiens Face Buffalo Sabres in Crucial Game 6 with Chance to Reach Conference Finals",
+        "summary": "Montreal hosts Buffalo in Game 6 tonight with a 3-2 series lead. One more win sends the Canadiens to the Eastern Conference Finals for the first time ...",
+        "image": "breaking/2026-05-16/breaking_3.png",
+        "url": "breaking/2026-05-16/3.html"
+      }
+    ]
   }
 }
