@@ -1286,5 +1286,28 @@
         "url": "breaking/2026-05-16/3.html"
       }
     ]
+  },
+  "2026-05-17": {
+    "date": "May 17, 2026",
+    "stories": [
+      {
+        "headline": "Bulgaria Wins Eurovision 2026 Amid Protests Over Israel Participation",
+        "summary": "Bulgaria won Eurovision 2026, but the contest was overshadowed by major protests over Israel’s participation, deepening scrutiny of the event’s politi...",
+        "image": "breaking/2026-05-17/breaking_1.png",
+        "url": "breaking/2026-05-17/1.html"
+      },
+      {
+        "headline": "Buffalo Sabres Force Game 7 with Stunning 8-3 Victory Over Montreal Canadiens",
+        "summary": "Buffalo routed Montreal 8-3 in Game 6 on May 16, staving off elimination and tying the second-round series 3-3. The Sabres now head to a winner-take-a...",
+        "image": "breaking/2026-05-17/breaking_2.png",
+        "url": "breaking/2026-05-17/2.html"
+      },
+      {
+        "headline": "China Unveils Rideable Wall-Smashing Robot by Unitree",
+        "summary": "Unitree has revealed a rideable robot that can smash through walls, signaling China’s fast progress in robotics and fueling debate over industrial, re...",
+        "image": "breaking/2026-05-17/breaking_3.png",
+        "url": "breaking/2026-05-17/3.html"
+      }
+    ]
   }
 }
