@@ -1309,5 +1309,28 @@
         "url": "breaking/2026-05-17/3.html"
       }
     ]
+  },
+  "2026-05-18": {
+    "date": "May 18, 2026",
+    "stories": [
+      {
+        "headline": "WHO Declares Ebola Outbreak in Congo and Uganda Public Health Emergency",
+        "summary": "WHO declared the Congo-Uganda Ebola outbreak a global health emergency, triggering urgent cross-border measures as East Africa races to contain the de...",
+        "image": "breaking/2026-05-18/breaking_1.png",
+        "url": "breaking/2026-05-18/1.html"
+      },
+      {
+        "headline": "Montreal Canadiens Face Buffalo Sabres in Decisive Game 7 Playoff Showdown",
+        "summary": "Canadiens and Sabres meet in a winner-take-all Game 7 in Buffalo after the Sabres’ 8-3 Game 6 rout, with a trip to the Eastern Conference Finals on th...",
+        "image": "breaking/2026-05-18/breaking_2.png",
+        "url": "breaking/2026-05-18/2.html"
+      },
+      {
+        "headline": "Four Italian Divers Found Dead in Underwater Cave in Maldives Atoll",
+        "summary": "Four Italian divers were found dead in an underwater cave in a Maldives atoll after a search operation. The tragedy underscores the severe dangers of ...",
+        "image": "breaking/2026-05-18/breaking_3.png",
+        "url": "breaking/2026-05-18/3.html"
+      }
+    ]
   }
 }
