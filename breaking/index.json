@@ -1332,5 +1332,28 @@
         "url": "breaking/2026-05-18/3.html"
       }
     ]
+  },
+  "2026-05-19": {
+    "date": "May 19, 2026",
+    "stories": [
+      {
+        "headline": "Montreal Canadiens Win Game 7 in Overtime, Advance to Eastern Conference Finals",
+        "summary": "Montreal beat Buffalo 3-2 in OT in Game 7 on May 18, with Alex Newhook scoring the winner to send the Canadiens to their first Eastern Conference Fina...",
+        "image": "breaking/2026-05-19/breaking_1.png",
+        "url": "breaking/2026-05-19/1.html"
+      },
+      {
+        "headline": "Deadly Shooting at San Diego Islamic Center",
+        "summary": "A deadly shooting outside a major Islamic center in San Diego left multiple people dead, including the attackers. Police are investigating the motive ...",
+        "image": "breaking/2026-05-19/breaking_2.png",
+        "url": "breaking/2026-05-19/2.html"
+      },
+      {
+        "headline": "Ebola Outbreak Spreads in Central Africa, U.S. Missionary Infected",
+        "summary": "An Ebola outbreak in DR Congo and Uganda has infected a U.S. missionary, heightening fears of wider spread as officials monitor cross-border transmiss...",
+        "image": "breaking/2026-05-19/breaking_3.png",
+        "url": "breaking/2026-05-19/3.html"
+      }
+    ]
   }
 }
