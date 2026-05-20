@@ -1355,5 +1355,28 @@
         "url": "breaking/2026-05-19/3.html"
       }
     ]
+  },
+  "2026-05-20": {
+    "date": "May 20, 2026",
+    "stories": [
+      {
+        "headline": "Deadly San Diego Mosque Attack Under Investigation",
+        "summary": "Authorities are probing a deadly attack on a San Diego mosque, reviewing a possible manifesto and extremist material linked to two suspected gunmen....",
+        "image": "breaking/2026-05-20/breaking_1.png",
+        "url": "breaking/2026-05-20/1.html"
+      },
+      {
+        "headline": "Extreme Weather Crisis Hits Multiple US Regions",
+        "summary": "A multi-region US weather crisis is unfolding: dangerous East Coast heat, Midwest tornadoes, and fast-growing California wildfires have triggered evac...",
+        "image": "breaking/2026-05-20/breaking_2.png",
+        "url": "breaking/2026-05-20/2.html"
+      },
+      {
+        "headline": "Ebola Outbreak Worsens in Central Africa",
+        "summary": "WHO says a worsening Ebola outbreak in Central Africa could last months, with deaths and cases rising fast—suggesting undetected spread for weeks....",
+        "image": "breaking/2026-05-20/breaking_3.png",
+        "url": "breaking/2026-05-20/3.html"
+      }
+    ]
   }
 }
