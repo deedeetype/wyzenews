@@ -1378,5 +1378,28 @@
         "url": "breaking/2026-05-20/3.html"
       }
     ]
+  },
+  "2026-05-22": {
+    "date": "May 22, 2026",
+    "stories": [
+      {
+        "headline": "Israeli Embassy Staffers Killed in Washington D.C. Shooting",
+        "summary": "Two Israeli Embassy staffers were killed outside D.C.’s Capital Jewish Museum. A suspect is in custody, intensifying fears over embassy security and a...",
+        "image": "breaking/2026-05-22/breaking_1.png",
+        "url": "breaking/2026-05-22/1.html"
+      },
+      {
+        "headline": "Harvard Loses International Student Certification",
+        "summary": "DHS has revoked Harvard’s certification to enroll new international students, a major escalation with broad implications for U.S. higher education and...",
+        "image": "breaking/2026-05-22/breaking_2.png",
+        "url": "breaking/2026-05-22/2.html"
+      },
+      {
+        "headline": "San Diego Plane Crash Kills Six",
+        "summary": "A Cessna Citation II crashed after takeoff in San Diego, killing six people and injuring others on the ground. Federal investigators are now probing w...",
+        "image": "breaking/2026-05-22/breaking_3.png",
+        "url": "breaking/2026-05-22/3.html"
+      }
+    ]
   }
 }
