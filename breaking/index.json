@@ -1401,5 +1401,28 @@
         "url": "breaking/2026-05-22/3.html"
       }
     ]
+  },
+  "2026-05-23": {
+    "date": "May 23, 2026",
+    "stories": [
+      {
+        "headline": "Montreal Canadiens Dominate Hurricanes 6-2 in Eastern Conference Finals Game 1",
+        "summary": "Montreal routed Carolina 6-2 in Game 1 of the East finals, grabbing a 1-0 series lead. The Canadiens’ explosive offense now puts pressure on the Hurri...",
+        "image": "breaking/2026-05-23/breaking_1.png",
+        "url": "breaking/2026-05-23/1.html"
+      },
+      {
+        "headline": "SpaceX Launches Biggest Starship on Historic Test Flight",
+        "summary": "SpaceX launched its largest Starship yet on a pivotal test flight, advancing reusable rocket development and boosting plans for Moon, Mars, and commer...",
+        "image": "breaking/2026-05-23/breaking_2.png",
+        "url": "breaking/2026-05-23/2.html"
+      },
+      {
+        "headline": "Al-Qaeda Militants Close In on Mali's Capital as Russian Mercenaries Retreat",
+        "summary": "Al-Qaeda-linked fighters are moving toward Bamako as Russian mercenaries pull back, deepening Mali’s security crisis and raising fears of wider Sahel ...",
+        "image": "breaking/2026-05-23/breaking_3.png",
+        "url": "breaking/2026-05-23/3.html"
+      }
+    ]
   }
 }
