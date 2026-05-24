@@ -1424,5 +1424,28 @@
         "url": "breaking/2026-05-23/3.html"
       }
     ]
+  },
+  "2026-05-24": {
+    "date": "May 24, 2026",
+    "stories": [
+      {
+        "headline": "Ebola Outbreak Spreads Rapidly in Central Africa",
+        "summary": "Officials are tracking hundreds of suspected Ebola cases in DR Congo and nearby Central African regions as deaths rise and global agencies rush to con...",
+        "image": "breaking/2026-05-24/breaking_1.png",
+        "url": "breaking/2026-05-24/1.html"
+      },
+      {
+        "headline": "Staten Island Shipyard Explosion Kills One, Injures Over 30",
+        "summary": "A shipyard explosion on Staten Island killed at least one person and injured more than 30. Investigators are now working to determine what caused the ...",
+        "image": "breaking/2026-05-24/breaking_2.png",
+        "url": "breaking/2026-05-24/2.html"
+      },
+      {
+        "headline": "Russia Launches Missile Strikes on Kyiv",
+        "summary": "Russia launched missile strikes on Kyiv, underscoring the war’s persistence as peace efforts stall and fears grow of further escalation in Ukraine....",
+        "image": "breaking/2026-05-24/breaking_3.png",
+        "url": "breaking/2026-05-24/3.html"
+      }
+    ]
   }
 }
