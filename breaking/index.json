@@ -1447,5 +1447,28 @@
         "url": "breaking/2026-05-24/3.html"
       }
     ]
+  },
+  "2026-05-25": {
+    "date": "May 25, 2026",
+    "stories": [
+      {
+        "headline": "U.S.-Iran Nuclear Deal Near Breakthrough",
+        "summary": "The U.S. says it is nearing a deal with Iran to reopen the Strait of Hormuz and lift port blockades, a move that could ease tensions and stabilize glo...",
+        "image": "breaking/2026-05-25/breaking_1.png",
+        "url": "breaking/2026-05-25/1.html"
+      },
+      {
+        "headline": "California Chemical Tank Emergency Forces Mass Evacuation",
+        "summary": "A damaged chemical tank at a California aerospace facility prompted evacuations of 50,000+ residents as crews raced to prevent a toxic leak or explosi...",
+        "image": "breaking/2026-05-25/breaking_2.png",
+        "url": "breaking/2026-05-25/2.html"
+      },
+      {
+        "headline": "Russia Launches Deadly Hypersonic Missile Strike on Kyiv",
+        "summary": "Russia hit Kyiv overnight with hypersonic missiles, killing several and injuring dozens to more than 100 in one of the capital’s fiercest attacks in m...",
+        "image": "breaking/2026-05-25/breaking_3.png",
+        "url": "breaking/2026-05-25/3.html"
+      }
+    ]
   }
 }
