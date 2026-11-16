@@ -29,10 +29,10 @@ Only `dist/` is published. A new public file must be added to the allowlist in
 
 ## Subscription flow (double opt-in)
 
-1. `POST /.netlify/functions/subscribe` emails a signed confirmation link (valid 48 h). Nothing is stored yet.
-2. The visitor clicks the link (`/confirm?token=...`), which calls `POST /.netlify/functions/confirm`.
+1. `POST /api/subscribe` emails a signed confirmation link (valid 48 h). Nothing is stored yet.
+2. The visitor clicks the link (`/confirm?token=...`), which calls `POST /api/confirm`.
    The subscriber is created or reactivated, and the welcome email is sent.
-3. `POST /.netlify/functions/unsubscribe` deactivates a subscriber from the link in every email.
+3. `POST /api/unsubscribe` deactivates a subscriber from the link in every email.
 
 Protections: per-IP rate limits, 1 confirmation email per address per 15 minutes,
 200 confirmation emails per day in total, honeypot field, origin check.

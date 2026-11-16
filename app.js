@@ -39,7 +39,7 @@ form.addEventListener('submit', async (e) => {
     
     try {
         // Call Netlify function to save subscriber
-        const response = await fetch('/.netlify/functions/subscribe', {
+        const response = await fetch('/api/subscribe', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

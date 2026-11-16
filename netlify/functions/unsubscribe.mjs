@@ -1,4 +1,4 @@
-// POST /.netlify/functions/unsubscribe
+// POST /api/unsubscribe
 // Marks a subscriber inactive, based on the unsubscribe token from their emails.
 
 import { getSupabase, isAllowedOrigin, isUuid, json, readJsonBody } from '../../lib/shared.mjs';
@@ -34,6 +34,7 @@ export default async (req) => {
 };
 
 export const config = {
+  path: '/api/unsubscribe',
   method: 'POST',
   rateLimit: {
     action: 'rate_limit',

@@ -1,4 +1,4 @@
-// POST /.netlify/functions/subscribe
+// POST /api/subscribe
 // Step 1 of double opt-in: emails a signed confirmation link.
 // Nothing is written to the database until the owner of the inbox confirms.
 
@@ -47,6 +47,7 @@ export default async (req) => {
 };
 
 export const config = {
+  path: '/api/subscribe',
   method: 'POST',
   rateLimit: {
     action: 'rate_limit',

@@ -1,4 +1,4 @@
-// POST /.netlify/functions/confirm
+// POST /api/confirm
 // Step 2 of double opt-in: verifies the signed token from the confirmation email,
 // then creates (or reactivates) the subscriber.
 
@@ -67,6 +67,7 @@ export default async (req) => {
 };
 
 export const config = {
+  path: '/api/confirm',
   method: 'POST',
   rateLimit: {
     action: 'rate_limit',

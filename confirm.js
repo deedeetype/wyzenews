@@ -27,7 +27,7 @@ async function confirmSubscription() {
     }
 
     try {
-        const response = await fetch('/.netlify/functions/confirm', {
+        const response = await fetch('/api/confirm', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ token })

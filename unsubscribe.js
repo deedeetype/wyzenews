@@ -17,7 +17,7 @@ async function unsubscribe() {
     }
 
     try {
-        const response = await fetch('/.netlify/functions/unsubscribe', {
+        const response = await fetch('/api/unsubscribe', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
