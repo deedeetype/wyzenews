@@ -1,15 +1,20 @@
+# Only dist/ is published. It is produced by scripts/build.mjs from an explicit
+# list of public files, so source code, docs and SQL never reach the website.
 [build]
-  publish = "."
-  functions = "functions"
+  command = "node scripts/build.mjs"
+  publish = "dist"
 
 [build.environment]
-  NODE_VERSION = "18"
+  NODE_VERSION = "22"
 
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
 
-# Environment variables (set these in Netlify dashboard):
-# SUPABASE_URL = your_supabase_project_url
-# SUPABASE_ANON_KEY = your_supabase_anon_key
+# No catch-all rewrite: unknown URLs get a real 404 (404.html).
+# Security headers are generated into dist/_headers by the build script.
+
+# Environment variables (set in the Netlify dashboard, never in this file):
+#   SUPABASE_DATABASE_URL, SUPABASE_SERVICE_ROLE_KEY  (functions only)
+#   GMAIL_USER, GMAIL_APP_PASSWORD                    (functions only)
+#   CONFIRM_SECRET                                    (functions only, signs opt-in links)

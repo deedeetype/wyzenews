@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unsubscribe - WyzeNews</title>
+    <meta name="robots" content="noindex">
+    <meta name="referrer" content="no-referrer">
     <style>
         * {
             margin: 0;
@@ -159,7 +161,7 @@
                 <div class="error-icon">❌</div>
                 <h2>Something Went Wrong</h2>
                 <p id="error-text">We couldn't process your unsubscribe request. Please try again or contact support.</p>
-                <a href="mailto:david.laborieux@gmail.com" class="button">Contact Support</a>
+                <a href="mailto:support@wyzenews.com" class="button">Contact Support</a>
             </div>
         </div>
 
@@ -170,59 +172,6 @@
         </div>
     </div>
 
-    <script>
-        // Get token from URL
-        const urlParams = new URLSearchParams(window.location.search);
-        const token = urlParams.get('token');
-
-        const loadingEl = document.getElementById('loading');
-        const successEl = document.getElementById('success');
-        const errorEl = document.getElementById('error');
-        const errorTextEl = document.getElementById('error-text');
-
-        async function unsubscribe() {
-            if (!token) {
-                showError('Invalid unsubscribe link. No token provided.');
-                return;
-            }
-
-            try {
-                const response = await fetch('/.netlify/functions/unsubscribe', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({ token })
-                });
-
-                const data = await response.json();
-
-                if (response.ok && data.success) {
-                    showSuccess();
-                } else {
-                    showError(data.error || 'Failed to unsubscribe. Please try again.');
-                }
-            } catch (error) {
-                console.error('Unsubscribe error:', error);
-                showError('Network error. Please check your connection and try again.');
-            }
-        }
-
-        function showSuccess() {
-            loadingEl.style.display = 'none';
-            errorEl.style.display = 'none';
-            successEl.style.display = 'block';
-        }
-
-        function showError(message) {
-            errorTextEl.textContent = message;
-            loadingEl.style.display = 'none';
-            successEl.style.display = 'none';
-            errorEl.style.display = 'block';
-        }
-
-        // Auto-run on page load
-        unsubscribe();
-    </script>
+    <script src="/unsubscribe.js"></script>
 </body>
 </html>

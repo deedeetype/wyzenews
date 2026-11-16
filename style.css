@@ -571,3 +571,12 @@ body {
 .date-divider:first-child::before {
     display: none;
 }
+
+/* Honeypot field: kept out of sight and out of the tab order */
+.hp-field {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}

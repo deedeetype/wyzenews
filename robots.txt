@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /unsubscribe
+Disallow: /confirm
+
+Sitemap: https://wyzenews.com/sitemap.xml

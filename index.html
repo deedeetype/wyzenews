@@ -15,7 +15,7 @@
     <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
     <link rel="manifest" href="/assets/site.webmanifest">
     
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
     <!-- Hero Section -->
@@ -29,7 +29,7 @@
         <div class="hero-content">
           <!-- Logo -->
           <div class="logo-container">
-            <img src="assets/WyzeNewsLogo.png" alt="WyzeNews Logo" class="logo" />
+            <img src="/assets/WyzeNewsLogo.png" alt="WyzeNews Logo" class="logo" />
           </div>
           <h1 class="hero-title">
             🌍 Breaking News,<br />
@@ -58,6 +58,11 @@
                 </span>
               </button>
             </div>
+            <!-- Honeypot: hidden from people, filled in by bots -->
+            <div class="hp-field" aria-hidden="true">
+              <label for="website">Leave this field empty</label>
+              <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" />
+            </div>
             <p class="form-hint">
               No spam. Unsubscribe anytime. Curated daily breaking news 100%
               FREE!
@@ -71,8 +76,8 @@
             style="display: none"
           >
             <div class="success-icon">✅</div>
-            <h3>Welcome to Daily Digest!</h3>
-            <p>Check your inbox for a confirmation email.</p>
+            <h3>Almost there!</h3>
+            <p>Check your inbox and click the link to confirm your subscription.</p>
           </div>
 
           <!-- Error Message -->
@@ -146,12 +151,12 @@
         </p>
         <p class="footer-links">
           <a href="mailto:support@wyzenews.com">Contact</a> |
-          <a href="#privacy">Privacy Policy</a>
+          <a href="/privacy">Privacy Policy</a>
         </p>
       </div>
     </footer>
 
-    <script src="app.js"></script>
-    <script src="digest.js"></script>
+    <script src="/app.js"></script>
+    <script src="/digest.js"></script>
   </body>
 </html>

@@ -24,35 +24,12 @@ CREATE INDEX IF NOT EXISTS idx_digest_subscribers_active
 CREATE INDEX IF NOT EXISTS idx_digest_subscribers_subscribed_at 
   ON digest_subscribers(subscribed_at);
 
--- RLS (Row Level Security) Policies
--- Allow public inserts (subscriptions)
+-- RLS (Row Level Security)
+-- RLS is enabled with NO policies: the public "anon" and "authenticated" roles
+-- cannot read or write this table at all. Only the Netlify functions, which use
+-- the service role key (it bypasses RLS), can access subscribers.
 ALTER TABLE digest_subscribers ENABLE ROW LEVEL SECURITY;
-
-CREATE POLICY "Allow public inserts" 
-  ON digest_subscribers 
-  FOR INSERT 
-  TO anon
-  WITH CHECK (true);
-
--- Allow public to check if email exists (for duplicate detection)
-CREATE POLICY "Allow public selects by email" 
-  ON digest_subscribers 
-  FOR SELECT 
-  TO anon
-  USING (true);
-
--- Only authenticated users (service role) can update/delete
-CREATE POLICY "Only service role can update" 
-  ON digest_subscribers 
-  FOR UPDATE 
-  TO authenticated
-  USING (true);
-
-CREATE POLICY "Only service role can delete" 
-  ON digest_subscribers 
-  FOR DELETE 
-  TO authenticated
-  USING (true);
+REVOKE ALL ON digest_subscribers FROM anon, authenticated;
 
 -- Updated_at trigger
 CREATE OR REPLACE FUNCTION update_updated_at_column()

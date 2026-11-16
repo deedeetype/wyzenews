@@ -44,7 +44,10 @@ form.addEventListener('submit', async (e) => {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ email })
+            body: JSON.stringify({
+                email,
+                website: document.getElementById('website')?.value || ''
+            })
         });
         
         const data = await response.json();
@@ -115,9 +118,3 @@ emailInput.addEventListener('input', () => {
 emailInput.addEventListener('focus', () => {
     hideMessages();
 });
-
-// Analytics (optional - add if you want tracking)
-function trackSubscription(email) {
-    // Add Google Analytics, Plausible, or other tracking here
-    console.log('Subscription tracked:', email);
-}

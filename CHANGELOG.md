@@ -1,5 +1,16 @@
 # WyzeNews - Changelog
 
+## v2.0.0-security (November 16, 2026)
+
+- Removed the public `send-welcome` endpoint (open email relay with HTML injection); email is now sent only from server code.
+- Double opt-in: `subscribe` sends a signed confirmation link, `confirm` creates the subscriber.
+- Rate limits, daily email cap, honeypot and origin check on all functions.
+- Functions use the service role key; the anon role no longer needs any database access.
+- Only an allowlist of files is published (`dist/`); source, docs and SQL are no longer on the website.
+- Real 404 page, `robots.txt`, generated `sitemap.xml`, security headers and CSP, SRI on the panzoom script.
+- Digest content is escaped before being inserted in the page.
+- No more email addresses in function logs.
+
 ## v1.1.0-gpt5-long-summaries (March 12, 2026) 🎯
 
 **PRODUCTION READY - Complete automation with dual summaries**

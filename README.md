@@ -11,111 +11,49 @@ Subscription landing page for the Daily Digest newsletter.
 - Responsive & mobile-friendly
 - Preview of digest format
 
-## 🚀 Deployment
-
-### Prerequisites
-
-1. **Supabase Database Setup:**
-   ```sql
-   CREATE TABLE digest_subscribers (
-     id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
-     email TEXT UNIQUE NOT NULL,
-     subscribed_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
-     active BOOLEAN DEFAULT TRUE,
-     source TEXT DEFAULT 'landing_page',
-     unsubscribe_token UUID DEFAULT gen_random_uuid(),
-     created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
-   );
-
-   -- Create index for faster email lookups
-   CREATE INDEX idx_digest_subscribers_email ON digest_subscribers(email);
-   CREATE INDEX idx_digest_subscribers_active ON digest_subscribers(active);
-   ```
-
-2. **Netlify Account** (free tier is fine)
-
-3. **GitHub Repository** (optional, for auto-deploy)
-
-### Deploy to Netlify
-
-#### Option 1: Netlify CLI
-
-```bash
-# Install Netlify CLI (if not already)
-npm install -g netlify-cli
-
-# Login to Netlify
-netlify login
-
-# Deploy from this directory
-cd /data/.openclaw/workspace/business/daily-digest-landing
-netlify deploy --prod
-```
-
-#### Option 2: GitHub + Netlify Auto-deploy
-
-1. Push this folder to GitHub
-2. Connect GitHub repo to Netlify
-3. Netlify auto-builds on every push
-
-### Environment Variables
-
-Set these in Netlify Dashboard → Site Settings → Environment Variables:
+## Architecture
 
 ```
-SUPABASE_URL=https://your-project.supabase.co
-SUPABASE_ANON_KEY=your-anon-key-here
+index.html, archive.html, privacy.html, unsubscribe.html, confirm.html, 404.html
+style.css, app.js, digest.js, archive.js, unsubscribe.js, confirm.js, robots.txt
+assets/, breaking/          -> public files (copied to dist/ by the build)
+scripts/build.mjs           -> builds dist/ (allowlist), sitemap.xml, _headers, SRI
+netlify/functions/          -> subscribe, confirm, unsubscribe (never published)
+lib/                        -> shared code, email sending, throttling (never published)
+supabase/                   -> schema and migrations (never published)
+tests/                      -> security regression tests (`npm test`)
 ```
 
-Get these from your Supabase project settings.
+Only `dist/` is published. A new public file must be added to the allowlist in
+`scripts/build.mjs`, otherwise it will not be on the website.
 
-## 🧪 Local Testing
+## Subscription flow (double opt-in)
 
-```bash
-# Serve locally
-python3 -m http.server 8000
+1. `POST /.netlify/functions/subscribe` emails a signed confirmation link (valid 48 h). Nothing is stored yet.
+2. The visitor clicks the link (`/confirm?token=...`), which calls `POST /.netlify/functions/confirm`.
+   The subscriber is created or reactivated, and the welcome email is sent.
+3. `POST /.netlify/functions/unsubscribe` deactivates a subscriber from the link in every email.
 
-# Open in browser
-open http://localhost:8000
-```
+Protections: per-IP rate limits, 1 confirmation email per address per 15 minutes,
+200 confirmation emails per day in total, honeypot field, origin check.
 
-Note: Netlify Functions won't work locally without `netlify dev`. For full local testing:
+## Environment variables (Netlify dashboard)
+
+| Variable | Used for |
+|---|---|
+| `SUPABASE_DATABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY` | database access from the functions |
+| `GMAIL_USER`, `GMAIL_APP_PASSWORD` | sending email |
+| `CONFIRM_SECRET` | signing the confirmation links |
+
+The database must be locked down with `supabase/2026-11-16_lock_down_subscribers.sql`.
+
+## Commands
 
 ```bash
 npm install
-netlify dev
+npm test        # security tests
+npm run build   # builds dist/
+netlify dev     # local site + functions
 ```
 
-## 📁 Structure
-
-```
-daily-digest-landing/
-├── index.html           # Main landing page
-├── style.css            # Styles (dark mode, responsive)
-├── app.js               # Client-side form handling
-├── netlify.toml         # Netlify config
-├── package.json         # Dependencies
-├── functions/
-│   └── subscribe.js     # Serverless function (saves to Supabase)
-└── README.md
-```
-
-## 🔗 Links
-
-- **Live Site:** (set after deployment)
-- **Supabase Dashboard:** https://supabase.com/dashboard
-- **Netlify Dashboard:** https://app.netlify.com
-
-## 📋 TODO (Phase 2)
-
-- [ ] Deploy to Netlify
-- [ ] Set up custom domain (e.g., digest.labwyze.com)
-- [ ] Add unsubscribe page
-- [ ] Add privacy policy page
-- [ ] Email confirmation workflow
-- [ ] Analytics tracking
-
----
-
-**Created:** 2026-03-12  
-**Owner:** David @ Labwyze Inc.
+Pushing to `main` deploys to production.

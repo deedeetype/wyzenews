@@ -8,14 +8,30 @@ function formatDate(date) {
     return `${year}-${month}-${day}`;
 }
 
+// Escape text coming from the digest index before inserting it into the page.
+function escapeHtml(value) {
+    return String(value ?? '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+}
+
+// Only allow links and images that stay inside this site's /breaking/ folder.
+function safePath(value) {
+    const path = String(value ?? '').replace(/^\/+/, '');
+    return /^breaking\/[\w\-/.]+$/.test(path) && !path.includes('..') ? '/' + path : '#';
+}
+
 // Create breaking card HTML
 function createBreakingCard(story) {
     return `
-        <a href="${story.url}" class="breaking-card">
-            <img src="${story.image}" alt="${story.headline}" class="breaking-card-image">
+        <a href="${safePath(story.url)}" class="breaking-card">
+            <img src="${safePath(story.image)}" alt="${escapeHtml(story.headline)}" class="breaking-card-image">
             <div class="breaking-card-content">
-                <h3 class="breaking-card-title">${story.headline}</h3>
-                <p class="breaking-card-summary">${story.summary}</p>
+                <h3 class="breaking-card-title">${escapeHtml(story.headline)}</h3>
+                <p class="breaking-card-summary">${escapeHtml(story.summary)}</p>
             </div>
         </a>
     `;
@@ -43,7 +59,7 @@ async function loadFullArchive() {
             const digest = data[dateSlug];
             
             // Date divider
-            html += `<div class="date-divider">${digest.date}</div>`;
+            html += `<div class="date-divider">${escapeHtml(digest.date)}</div>`;
             
             // Stories grid
             html += '<div class="digest-grid">';

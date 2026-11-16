@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page not found - WyzeNews</title>
+    <meta name="robots" content="noindex">
+    <meta name="referrer" content="no-referrer">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #e0e0e0;
+            background-color: #0f0f1e;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background: linear-gradient(135deg, #1e1e3f 0%, #2a2a4a 100%);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            color: #ffffff;
+            font-size: 28px;
+            margin: 0;
+        }
+
+        .content {
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .content h2 {
+            color: #ffffff;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            color: #b8b8d1;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .loading {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 4px solid rgba(102, 126, 234, 0.2);
+            border-top-color: #667eea;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .success-message {
+            display: none;
+        }
+
+        .success-icon {
+            font-size: 64px;
+            margin-bottom: 20px;
+        }
+
+        .error-message {
+            display: none;
+        }
+
+        .error-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 30px;
+            margin-top: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+        }
+
+        .footer {
+            background-color: #0f0f1e;
+            padding: 20px 30px;
+            text-align: center;
+            font-size: 14px;
+            color: #7a7a9e;
+        }
+
+        .footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌍 WyzeNews</h1>
+        </div>
+
+        <div class="content">
+            <div class="error-message" style="display: block;">
+                <div class="error-icon">🦉</div>
+                <h2>Page Not Found</h2>
+                <p>This page does not exist.</p>
+                <a href="/" class="button">Back to Home</a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>
+                <strong>WyzeNews</strong> by <a href="https://labwyze.com">Labwyze Inc.</a>
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
